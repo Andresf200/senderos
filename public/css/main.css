@@ -7,6 +7,11 @@ body{
     text-decoration: underline rgba(148,233,153,1);
     font-size: 4rem;
 }
+
+.font2{
+    font-family: 'Lobster', cursive;
+    text-decoration: underline rgba(148,233,153,1);
+}
 .jean{
     background-color:rgba(0, 0, 0, 0.5);
 }

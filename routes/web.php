@@ -4,8 +4,11 @@ use App\Http\Controllers\AuthController;
 use App\Http\Controllers\CarrouselController;
 use App\Http\Controllers\ObituariesController;
 use App\Http\Controllers\UserController;
+use App\Mail\ContactanosMailable;
 use App\Models\Headquarters;
 use App\Models\Obituaries;
+use Illuminate\Http\Request;
+use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
@@ -59,3 +62,19 @@ Route::get('/obituariesClient',function(){
         'obituaries', Obituaries::all()
         ]);
 })->name('obituaries.client');
+
+Route::post('contactanos',function(Request $request){
+    $request->validate([
+       'name' => ['string','required'],
+       'phone' => ['string','required'],
+       'email' => ['email','required'],
+       'message' => ['string','required'],
+    ]);
+
+    $instanceContactMailable = new ContactanosMailable($request->all());
+   Mail::to('afloriangonzales@gmail.com')->send($instanceContactMailable);
+
+    return redirect()
+        ->back()
+        ->withSuccess("se ha enviado el contacto");
+});

@@ -28,7 +28,7 @@
                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Zafiro</a>
+                    <a class="nav-link" href="{{ route('card.zafiro') }}">Zafiro</a>
                 </li>
                 <li class="nav-item">
                     <a class="nav-link" href="#">Obituario</a>

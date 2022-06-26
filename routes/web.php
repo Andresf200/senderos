@@ -15,6 +15,8 @@ Route::get('/', function () {
     return view('home/home');
 })->name('home');
 
+Route::view('/zafiro.zafiro', 'zafiro.zafiro')->name('zafiro');
+
 Route::get('/dashboard',fn() => view('dashboard.dashboard'))->name('dashboard')
     ->middleware('auth');
 

@@ -16,12 +16,31 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
-<nav class="navbar navbar-dark bg-dark">
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark">
     <div class="container-fluid">
-        <a class="navbar-brand">senderos de paz</a>
-        <form class="d-flex" role="search">
-            <button class="btn btn-success" type="submit">Iniciar sesión</button>
-        </form>
+        <a class="navbar-brand" href="#">Senderos de Paz</a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+            <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Zafiro</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Obituario</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">Nuestras sedes</a>
+                </li>
+            </ul>
+            <form class="d-flex" role="search">
+                <button class="btn btn-success" type="submit">Iniciar sesión</button>
+            </form>
+        </div>
     </div>
 </nav>
 <div class="container-fluid d-flex justify-content-center mt-5 container--color">
@@ -330,6 +349,28 @@
                                         <p class="card-text">Protege a tu mascota, ellos también hacen parte de tu familia.
                                             INFORMACIÓN
                                             Cel 3104511207 / (2) 2138567</p>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion-item">
+                        <h2 class="accordion-header" id="headingTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwo">
+                                Repatriación
+                            </button>
+                        </h2>
+                        <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <div class="card w-100" style="width: 18rem;">
+                                    <img src="{{asset('img/vista-superior-aviones-sobre-fondo-azul_23-2148580909.webp')}}" class="card-img-top" alt="...">
+                                    <div class="card-body">
+                                        <ul>
+                                            <li>Tramites legales Completo.</li>
+                                            <li>Traslado del cuerpo hasta el aeropuerto internacional mas cercano.</li>
+                                            <li>Traslado Nacional hacia la sala de velacion dispuesta por nuestra compañia.</li>
+                                            <li>Todos los costos de repatriacion estan cubiertos por FINSA.</li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>

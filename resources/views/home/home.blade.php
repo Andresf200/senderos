@@ -28,13 +28,13 @@
                     <a class="nav-link active" aria-current="page" href="#">Inicio</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="{{ route('card.zafiro') }}">Zafiro</a>
+                    <a class="nav-link" href="{{ route('zafiro') }}">Zafiro</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Obituario</a>
+                    <a class="nav-link" href="{{ route('obituario') }}">Obituario</a>
                 </li>
                 <li class="nav-item">
-                    <a class="nav-link" href="#">Nuestras sedes</a>
+                    <a class="nav-link" href="{{ route('headquarters') }}">Nuestras sedes</a>
                 </li>
             </ul>
             <form class="d-flex" role="search">

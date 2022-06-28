@@ -19,7 +19,7 @@ Route::view('/zafiro.zafiro', 'zafiro.zafiro')->name('zafiro');
 
 Route::view('/obituario.obituario', 'obituario.obituario')->name('obituario');
 
-Route::view('/login', 'login')->name('login');
+//Route::view('/login', 'login')->name('login');
 
 Route::view('/headquarters.headquarters', 'headquarters.headquarters')->name('headquarters');
 
@@ -36,7 +36,7 @@ Route::get('/plan-pet',fn() => view('plan-pet'))->name('plan.pet');
 Route::get('/our-locations',fn() => view('our-locations'))->name('our.locations');
 //todo end
 
-Route::get('/login',fn() => view('login'))->name('login')->middleware('guest');
+Route::get('/login',fn() => view('login'))->name('login')   ;
 
 Route::post('/login',[AuthController::class,'login'])->name('login');
 Route::post('/logout',[AuthController::class,'logout'])->name('logout');

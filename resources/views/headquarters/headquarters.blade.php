@@ -54,7 +54,7 @@
     <div class="row">
         <div class="col-sm-12 col-md-6">
             <table class="table table-responsive">
-                <thead class="table-dark">
+                <thead class="table" style="background-color: #00bcd4">
                 <tr>
                     <th scope="col">#</th>
                     <th scope="col">Ciudad</th>
@@ -126,8 +126,8 @@
                 </tbody>
             </table>
         </div>
-        <div class="col-sm-12 col-md-6">
-            <img src="{{ asset('img/sedes.jpeg') }}" class="img-fluid" alt="">
+        <div class="col-sm-12 col-md-6" style="background-color: #00bcd4">
+            <img src="{{ asset('img/mapas.png') }}" class="img-fluid" alt="">
         </div>
     </div>
 </div>

@@ -12,13 +12,14 @@
 </head>
 <body>
 <div class="contenedor">
-    <form class="contenedor_login">
+    <form class="contenedor_login" method="POST" action="{{ route('login') }}">
+        @csrf
         <img src="{{asset( 'img/logo2.png' )}}" height="100px" alt="Imagen del logo" class="imagen">
         <h3 class="mt-5"> Ingresar al sistema</h3>
-        <label>Usuario</label>
-        <input type="text" placeholder="Ingrese su usuario">
+        <label>Correo eléctronico</label>
+        <input type="text" placeholder="Ingrese su correo eléctronico" name="email">
         <label>Contraseña</label>
-        <input type="password" placeholder="Ingrese su contraseña">
+        <input type="password" placeholder="Ingrese su contraseña" name="password">
         <input type="submit" value="Ingresar" class="efecto">
         <div class="d-flex justify-content-center">
             <a class="btn btn-outline-success m-1 w-100" href="{{ route('home') }}">Regresar</a>

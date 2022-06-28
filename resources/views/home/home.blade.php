@@ -99,9 +99,15 @@
                     <div class="card-body ">
                         <h3 class="font2 text-center">Siguenos en redes sociales</h3>
                         <div class="d-flex justify-content-around align-items-center mt-5">
-                            <img class="m-2" src="{{ asset('img/facebook.webp') }}" height="50" alt="logo_facebook">
-                            <img class="m-2" src="{{ asset('img/instagram.webp') }}" height="50" alt="logo_instagram">
-                            <img class="m-2" src="{{ asset('img/twitter.webp') }}" height="50" alt="logo_twitter">
+                            <a  href="https://www.facebook.com/senderosdepazoficial/" target="_blank">
+                                <img class="m-2" src="{{ asset('img/facebook.webp') }}" height="50" alt="logo_facebook">
+                            </a>
+                            <a href="https://www.instagram.com/senderos.de.paz/?igshid=17vzmxverad04" target="_blank">
+                                <img class="m-2" src="{{ asset('img/instagram.webp') }}" height="50" alt="logo_instagram">
+                            </a>
+                            <a href="https://twitter.com/senderos_de_paz?lang=es" target="_blank">
+                                <img class="m-2" src="{{ asset('img/twitter.webp') }}" height="50" alt="logo_twitter">
+                            </a>
                         </div>
 
                     </div>

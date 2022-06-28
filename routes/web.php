@@ -19,6 +19,8 @@ Route::view('/zafiro.zafiro', 'zafiro.zafiro')->name('zafiro');
 
 Route::view('/obituario.obituario', 'obituario.obituario')->name('obituario');
 
+Route::view('/login', 'login')->name('login');
+
 Route::view('/headquarters.headquarters', 'headquarters.headquarters')->name('headquarters');
 
 Route::get('/dashboard',fn() => view('dashboard.dashboard'))->name('dashboard')

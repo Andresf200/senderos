@@ -38,7 +38,7 @@
                 </li>
             </ul>
             <form class="d-flex" role="search">
-                <button class="btn btn-success" type="submit">Iniciar sesión</button>
+                <a class="btn btn-success" href="{{ route('login') }}">Iniciar sesión</a>
             </form>
         </div>
     </div>

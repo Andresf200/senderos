@@ -16,10 +16,11 @@
     <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css"/>
 </head>
 <body>
-<nav class="navbar navbar-expand-lg navbar-light" style="background-color: #50bce0">
+<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #034672">
     <div class="container-fluid">
         <a class="navbar-brand" href="#">Senderos de Paz</a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarSupportedContent">
@@ -99,11 +100,12 @@
                     <div class="card-body ">
                         <h3 class="font2 text-center">Siguenos en redes sociales</h3>
                         <div class="d-flex justify-content-around align-items-center mt-5">
-                            <a  href="https://www.facebook.com/senderosdepazoficial/" target="_blank">
+                            <a href="https://www.facebook.com/senderosdepazoficial/" target="_blank">
                                 <img class="m-2" src="{{ asset('img/facebook.webp') }}" height="50" alt="logo_facebook">
                             </a>
                             <a href="https://www.instagram.com/senderos.de.paz/?igshid=17vzmxverad04" target="_blank">
-                                <img class="m-2" src="{{ asset('img/instagram.webp') }}" height="50" alt="logo_instagram">
+                                <img class="m-2" src="{{ asset('img/instagram.webp') }}" height="50"
+                                     alt="logo_instagram">
                             </a>
                             <a href="https://twitter.com/senderos_de_paz?lang=es" target="_blank">
                                 <img class="m-2" src="{{ asset('img/twitter.webp') }}" height="50" alt="logo_twitter">
@@ -157,11 +159,13 @@
                 <div class="accordion" id="accordionExample">
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingOne">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
                                 Planes familiares
                             </button>
                         </h2>
-                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne" data-bs-parent="#accordionExample">
+                        <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
+                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="card w-70">
                                     <img src="{{asset('img/familia.jpg')}}" class="card-img-top" alt="...">
@@ -176,16 +180,19 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
                                 Planes empresariales
                             </button>
                         </h2>
-                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="card w-100" style="width: 18rem;">
                                     <img src="{{asset('img/empresarial.jpg')}}" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <p class="card-text">Planes acordes al tamaño de su empresa y necesidades de sus colaboradores
+                                        <p class="card-text">Planes acordes al tamaño de su empresa y necesidades de sus
+                                            colaboradores
                                             INFORMACIÓN Cel 3204812453 / (2) 2148567</p>
                                     </div>
                                 </div>
@@ -194,16 +201,19 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingThree">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
                                 Apoyo Psicosocial
                             </button>
                         </h2>
-                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree" data-bs-parent="#accordionExample">
+                        <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="card w-100">
                                     <img src="{{asset('img/psicosocial.jpg')}}" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <p class="card-text">Planes acordes al tamaño de su empresa y necesidades de sus colaboradores
+                                        <p class="card-text">Planes acordes al tamaño de su empresa y necesidades de sus
+                                            colaboradores
                                             INFORMACIÓN Cel 3204812453 / (2) 2148567</p>
                                     </div>
                                 </div>
@@ -212,16 +222,19 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
                                 Plan Galardón
                             </button>
                         </h2>
-                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="card w-100" style="width: 18rem;">
                                     <img src="{{asset('img/galardon.jpg')}}" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <p class="card-text">Plan especial diseñado para la comunidad cristiana INFORMACIÓN Cel 3204812453 / (2) 2148567</p>
+                                        <p class="card-text">Plan especial diseñado para la comunidad cristiana
+                                            INFORMACIÓN Cel 3204812453 / (2) 2148567</p>
                                     </div>
                                 </div>
                             </div>
@@ -229,16 +242,20 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
                                 Titulo Diamante
                             </button>
                         </h2>
-                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="card w-100" style="width: 18rem;">
                                     <img src="{{asset('img/diamante.jpg')}}" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <p class="card-text">Senderos integra un producto para tu adulto mayor, este título ha sido creado para personas de 80 años en adelante, este servicio es transferible.
+                                        <p class="card-text">Senderos integra un producto para tu adulto mayor, este
+                                            título ha sido creado para personas de 80 años en adelante, este servicio es
+                                            transferible.
                                             INFORMACIÓN
                                             Cel 3104511207 / (2) 2148567</p>
                                     </div>
@@ -248,11 +265,13 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
                                 Plan Pueblo
                             </button>
                         </h2>
-                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="card w-100" style="width: 18rem;">
                                     <img src="{{asset('img/pueblo.png')}}" class="card-img-top" alt="...">
@@ -267,16 +286,19 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseTwo">
                                 Plan Acuavalle
                             </button>
                         </h2>
-                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="card w-100" style="width: 18rem;">
                                     <img src="{{asset('img/Acuavalle.jpg')}}" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <p class="card-text">Para los usuarios de la empresa de servicios de Acuavalle cobro a través de la factura de servicio.
+                                        <p class="card-text">Para los usuarios de la empresa de servicios de Acuavalle
+                                            cobro a través de la factura de servicio.
                                             INFORMACIÓN
                                             Cel 3104511207 / (2) 2148567</p>
                                     </div>
@@ -286,11 +308,13 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseTwo">
                                 Plan bono canasta
                             </button>
                         </h2>
-                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="card w-100" style="width: 18rem;">
                                     <img src="{{asset('img/bonocanasta.jpg')}}" class="card-img-top" alt="...">
@@ -305,16 +329,19 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseTwo">
                                 Plan ERT
                             </button>
                         </h2>
-                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="card w-100" style="width: 18rem;">
                                     <img src="{{asset('img/Ert.jpg')}}" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <p class="card-text">Para los usuarios de la Empresa Regional de Telecomunicaciones en el Valle cobro a través de la factura ERT
+                                        <p class="card-text">Para los usuarios de la Empresa Regional de
+                                            Telecomunicaciones en el Valle cobro a través de la factura ERT
                                             INFORMACIÓN
                                             Cel 3104511207 / (2) 2148567</p>
                                     </div>
@@ -324,16 +351,19 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTwo">
                                 Plan integral
                             </button>
                         </h2>
-                        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="card w-100" style="width: 18rem;">
                                     <img src="{{asset('img/integral.jpg')}}" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <p class="card-text">Plan de previsión exequial que cubre un grupo amplio de la familia
+                                        <p class="card-text">Plan de previsión exequial que cubre un grupo amplio de la
+                                            familia
                                             INFORMACIÓN
                                             Cel 3104511207 / (2) 2148567</p>
                                     </div>
@@ -343,16 +373,19 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseTwo">
                                 Plan mascota
                             </button>
                         </h2>
-                        <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="card w-100" style="width: 18rem;">
                                     <img src="{{asset('img/mascotas.jpg')}}" class="card-img-top" alt="...">
                                     <div class="card-body">
-                                        <p class="card-text">Protege a tu mascota, ellos también hacen parte de tu familia.
+                                        <p class="card-text">Protege a tu mascota, ellos también hacen parte de tu
+                                            familia.
                                             INFORMACIÓN
                                             Cel 3104511207 / (2) 2138567</p>
                                     </div>
@@ -362,19 +395,25 @@
                     </div>
                     <div class="accordion-item">
                         <h2 class="accordion-header" id="headingTwo">
-                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwo">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                    data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwo">
                                 Repatriación
                             </button>
                         </h2>
-                        <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwo" data-bs-parent="#accordionExample">
+                        <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                             data-bs-parent="#accordionExample">
                             <div class="accordion-body">
                                 <div class="card w-100" style="width: 18rem;">
-                                    <img src="{{asset('img/vista-superior-aviones-sobre-fondo-azul_23-2148580909.webp')}}" class="card-img-top" alt="...">
+                                    <img
+                                        src="{{asset('img/vista-superior-aviones-sobre-fondo-azul_23-2148580909.webp')}}"
+                                        class="card-img-top" alt="...">
                                     <div class="card-body">
                                         <ul>
                                             <li>Tramites legales Completo.</li>
                                             <li>Traslado del cuerpo hasta el aeropuerto internacional mas cercano.</li>
-                                            <li>Traslado Nacional hacia la sala de velacion dispuesta por nuestra compañia.</li>
+                                            <li>Traslado Nacional hacia la sala de velacion dispuesta por nuestra
+                                                compañia.
+                                            </li>
                                             <li>Todos los costos de repatriacion estan cubiertos por FINSA.</li>
                                         </ul>
                                     </div>
@@ -444,10 +483,37 @@
         </div>
     </div>
 </div>
-<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
-    <path fill="#94E999FF" fill-opacity="1"
-          d="M0,320L30,309.3C60,299,120,277,180,245.3C240,213,300,171,360,138.7C420,107,480,85,540,80C600,75,660,85,720,117.3C780,149,840,203,900,192C960,181,1020,107,1080,90.7C1140,75,1200,117,1260,154.7C1320,192,1380,224,1410,240L1440,256L1440,320L1410,320C1380,320,1320,320,1260,320C1200,320,1140,320,1080,320C1020,320,960,320,900,320C840,320,780,320,720,320C660,320,600,320,540,320C480,320,420,320,360,320C300,320,240,320,180,320C120,320,60,320,30,320L0,320Z"></path>
-</svg>
+
+<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top mt-5">
+    <div class="col-md-4 d-flex align-items-center">
+        <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
+            <svg class="bi" width="30" height="24">
+                <use xlink:href="#bootstrap"/>
+            </svg>
+        </a>
+        <span class="text-muted">&copy; 2022 Senderos de paz</span>
+    </div>
+
+    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
+        <li class="ms-3">
+            <a class="text-muted" href="https://www.facebook.com/senderosdepazoficial/" target="_blank">
+                <img class="m-2" src="{{ asset('img/facebook.webp') }}" height="30" alt="logo_facebook">
+            </a>
+        </li>
+        <li class="ms-3">
+            <a class="text-muted" href="https://www.instagram.com/senderos.de.paz/?igshid=17vzmxverad04" target="_blank">
+                <img class="m-2" src="{{ asset('img/instagram.webp') }}" height="30"
+                     alt="logo_instagram">
+            </a>
+        </li>
+        <li class="ms-3">
+            <a class="text-muted" href="https://twitter.com/senderos_de_paz?lang=es" target="_blank">
+                <img class="m-2" src="{{ asset('img/twitter.webp') }}" height="30" alt="logo_twitter">
+            </a>
+        </li>
+    </ul>
+</footer>
+
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
     const swiper = new Swiper('.swiper', {

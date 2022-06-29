@@ -26,7 +26,7 @@
                         <a class="nav-link active" aria-current="page" href="{{ route('carrousel.index') }}">Carrousel</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('obituaries.client') }}">Obituarios</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('obituaries.index') }}">Obituarios</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search" action="{{route('logout')}}">

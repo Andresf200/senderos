@@ -22,7 +22,7 @@ class ObituariesController extends Controller
     //todo crear vista
     public function index(): Factory|View|Application
     {
-        return view('obituaries.index')->with([
+        return view('dashboard.obituaries.index')->with([
             'obituaries' => Obituaries::all(),
             'headquarters' => Headquarters::all(),
         ]);
@@ -40,13 +40,13 @@ class ObituariesController extends Controller
         $obituarie = Obituaries::create($request->validated());
 
         return redirect()
-            ->route('obituaries.index')
+            ->route('dashboard.obituaries.index')
             ->withSuccess("El nuevo obituario con id {$obituarie->id} fue creado");
     }
 
     public function edit(Request $request)
     {
-        return view('obituaries.edit')->with([
+        return view('dashboard.obituaries.edit')->with([
             'obituaries' => $request->user(),
             'headquarters' => Headquarters::all(),
         ]);
@@ -57,7 +57,7 @@ class ObituariesController extends Controller
         $obituarie->update($request->validated());
 
         return redirect()
-            ->route('obituaries.index')
+            ->route('dashboard.obituaries.index')
             ->withSuccess("El obituario con id {$obituarie->id} fue editado");
     }
 
@@ -66,7 +66,7 @@ class ObituariesController extends Controller
         $obituarie->delete();
 
         return redirect()
-            ->route('obituaries.index')
+            ->route('dashboard.obituaries.index')
             ->withSuccess("El obituario con id {$obituarie->id} fue eliminado");
     }
 }

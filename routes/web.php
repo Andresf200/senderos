@@ -71,8 +71,8 @@ Route::get('/obituariesClient',function(){
         ]);
 })->name('obituaries.client');
 
-Route::view('/dashboard.obituaries.create', 'dashboard.obituaries.create')->name('obituaries.create');
-Route::view('/dashboard.obituaries.edit', 'dashboard.obituaries.edit')->name('obituaries.edit');
+//Route::view('/dashboard.obituaries.create', 'dashboard.obituaries.create')->name('obituaries.create');
+//Route::view('/dashboard.obituaries.edit', 'dashboard.obituaries.edit')->name('obituaries.edit');
 
 Route::post('contactanos',function(Request $request){
     $request->validate([

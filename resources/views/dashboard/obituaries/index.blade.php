@@ -27,23 +27,23 @@
                         </tr>
                         </thead>
                         <tbody>
-{{--                        @foreach($obituaries as $obituary)--}}
-{{--                            <tr>--}}
-{{--                                <th scope="row">{{ $obituary->name_deceased }}</th>--}}
-{{--                                <td>{{ $obituary->family }}</td>--}}
-{{--                                <td>{{ $obituary->date_death }}</td>--}}
-{{--                                <td>{{ $obituary->wake }}</td>--}}
-{{--                                <td>{{ $obituary->church }}</td>--}}
-{{--                                <td>{{ $obituary->hour }}</td>--}}
-{{--                                <td>{{ $obituary->hour }}</td>--}}
-{{--                                <td>{{ $obituary->cemetery }}</td>--}}
-{{--                                <td>{{ $obituary->municipality_id }}</td>--}}
-{{--                                <td>--}}
-{{--                                    <a class="btn btn-primary" href="">Editar</a>--}}
-{{--                                    <a class="btn btn-danger" href="">Eliminar</a>--}}
-{{--                                </td>--}}
-{{--                            </tr>--}}
-{{--                        @endforeach--}}
+                        @foreach($obituaries as $obituary)
+                            <tr>
+                                <th scope="row">{{ $obituary->name_deceased }}</th>
+                                <td>{{ $obituary->family }}</td>
+                                <td>{{ $obituary->date_death }}</td>
+                                <td>{{ $obituary->wake }}</td>
+                                <td>{{ $obituary->church }}</td>
+                                <td>{{ $obituary->hour }}</td>
+                                <td>{{ $obituary->hour }}</td>
+                                <td>{{ $obituary->cemetery }}</td>
+                                <td>{{ $obituary->municipality_id }}</td>
+                                <td>
+                                    <a class="btn btn-primary" href="">Editar</a>
+                                    <a class="btn btn-danger" href="">Eliminar</a>
+                                </td>
+                            </tr>
+                        @endforeach
                         </tbody>
                     </table>
                 </div>

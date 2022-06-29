@@ -54,6 +54,7 @@ class ObituariesController extends Controller
 
     public function update(ObituariesUpdateRequest $request, Obituaries $obituarie)
     {
+        dd($request);
         $obituarie->update($request->validated());
 
         return redirect()

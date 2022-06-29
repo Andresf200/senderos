@@ -6,7 +6,7 @@
 
 @section('content')
     <div class="row justify-content-center mt-5">
-        <div class="col-sm-12 col-md-10">
+        <div class="col-sm-12 col-md-12">
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
                     Listado de usuarios
@@ -24,6 +24,7 @@
                             <th scope="col">Hora</th>
                             <th scope="col">Cementerio</th>
                             <th scope="col">Municipio</th>
+                            <th scope="col">Acciones</th>
                         </tr>
                         </thead>
                         <tbody>
@@ -35,12 +36,11 @@
                                 <td>{{ $obituary->wake }}</td>
                                 <td>{{ $obituary->church }}</td>
                                 <td>{{ $obituary->hour }}</td>
-                                <td>{{ $obituary->hour }}</td>
                                 <td>{{ $obituary->cemetery }}</td>
                                 <td>{{ $obituary->municipality_id }}</td>
                                 <td>
-                                    <a class="btn btn-primary" href="">Editar</a>
-                                    <a class="btn btn-danger" href="">Eliminar</a>
+                                    <a class="" href="{{ route('obituaries.edit', $obituary->id) }}">Editar</a>
+                                    <a class="" href="{{ route('obituaries.destroy', $obituary->id) }}">Eliminar</a>
                                 </td>
                             </tr>
                         @endforeach

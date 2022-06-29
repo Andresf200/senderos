@@ -12,44 +12,40 @@
                     Editar usuarios
                 </div>
                 <div class="card-body">
-                    <form>
+                    <form method="POST" action="{{ route('obituaries.update', $obituaries->id) }}">
+                        @csrf
+                        @method('PUT')
                         <div class="mb-3">
-                            <label class="form-label">Nombre completo</label>
-                            <input type="text" class="form-control" placeholder="Nombre completo" name="name_deceased">
+                            <label class="form-label">Nombres</label>
+                            <input type="text" value="{{ $obituaries->name }}" class="form-control" placeholder="Nombres" name="name">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Familia</label>
-                            <input type="text" class="form-control" placeholder="Familia" name="family">
+                            <label class="form-label">Apellidos</label>
+                            <input type="text" value="{{ $obituaries->last_name }}" class="form-control" placeholder="Apellidos" name="last_name">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Fecha de fallecimiento</label>
-                            <input type="date" class="form-control" name="date_death">
+                            <label class="form-label">Identificación</label>
+                            <input type="text" value="{{ $obituaries->identifier }}" class="form-control" placeholder="Identificación" name="identifier">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Sala de velación</label>
-                            <input type="text" class="form-control" placeholder="Sala velación" name="wake">
+                            <label class="form-label">Teléfono</label>
+                            <input type="text" value="{{ $obituaries->phone }}" class="form-control" placeholder="Teléfono" name="phone">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Iglesia</label>
-                            <input type="text" class="form-control" placeholder="iglesia" name="church">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Hora</label>
-                            <input type="time" class="form-control" name="hour">
-                        </div>
-                        <div class="mb-3">
-                            <label class="form-label">Cementerio</label>
-                            <input type="text" class="form-control" placeholder="Cementerio" name="cemetery">
+                            <label class="form-label">Dirección</label>
+                            <input type="text" value="{{ $obituaries->address }}" class="form-control" placeholder="Dirección" name="address">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Municipio</label>
+
                             <select class="form-select" name="municipality_id">
-                                <option selected>Municipios</option>
-                                <option value="1">Cartago</option>
-                                <option value="2">Zarzal</option>
+                                <option value="{{ $obituaries->municipality_id }}" selected>Municipio</option>
+                                @foreach($headquarters as $municipalities)
+                                    <option value="{{$municipalities->id}}">{{ $municipalities->municipality }}</option>
+                                @endforeach
                             </select>
                         </div>
-                        <button type="submit" class="btn btn-success mt-4">Enviar</button>
+                        <button type="submit" class="btn btn-success mt-4">Actualizar</button>
                     </form>
                 </div>
             </div>

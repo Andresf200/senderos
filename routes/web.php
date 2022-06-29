@@ -65,11 +65,14 @@ Route::resource('/users',UserController::class)
     ->middleware('is.admin');
 
 Route::get('/obituariesClient',function(){
-    return view('obituariesClient')
+    return view('dashboard.obituaries.index')
     ->with([
         'obituaries', Obituaries::all()
         ]);
 })->name('obituaries.client');
+
+Route::view('/dashboard.obituaries.create', 'dashboard.obituaries.create')->name('obituaries.create');
+Route::view('/dashboard.obituaries.edit', 'dashboard.obituaries.edit')->name('obituaries.edit');
 
 Route::post('contactanos',function(Request $request){
     $request->validate([

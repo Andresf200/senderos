@@ -9,7 +9,7 @@
         <div class="col-sm-12 col-md-8">
             <div class="card">
                 <div class="card-header">
-                    Crear usuarios
+                    Editar usuarios
                 </div>
                 <div class="card-body">
                     <form>

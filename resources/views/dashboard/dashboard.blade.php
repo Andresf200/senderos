@@ -9,7 +9,7 @@
         <title>Dashboard</title>
     </head>
     <body class="antialiased">
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #50bce0">
+     <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #50bce0">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Senderos de Paz</a>
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -18,16 +18,10 @@
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="#">Inicio</a>
+                        <a class="nav-link active" aria-current="page" href="#">Carrousel</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('zafiro') }}">Zafiro</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('obituario') }}">Obituario</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link" href="{{ route('headquarters') }}">Nuestras sedes</a>
+                        <a class="nav-link active" aria-current="page" href="{{ route('obituaries.client') }}">Obituarios</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search" action="{{route('logout')}}">

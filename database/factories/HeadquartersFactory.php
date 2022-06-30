@@ -13,7 +13,7 @@ class HeadquartersFactory extends Factory
     public function definition()
     {
         return [
-            'municipality' => $this->faker->randomElement(['zarzal','cartago']),
+            'municipality' => $this->faker->randomElement(['zarzal']),
         ];
     }
 }

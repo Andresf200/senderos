@@ -12,7 +12,6 @@
                     Editar obituarios
                 </div>
                 <div class="card-body">
-
                     <form method="POST" action="{{ route('obituaries.update', $obituary->id) }}">
                         @csrf
                         @method('PUT')
@@ -47,9 +46,12 @@
                         <div class="mb-3">
                             <label class="form-label">Municipio</label>
                             <select class="form-select" name="municipality_id">
-                                <option value="{{ $obituary->municipality_id }}" selected>Municipio</option>
                                 @foreach($headquarters as $municipalities)
+                                   @if($obituary->municipality_id == $municipalities->id)
+                                        <option selected value="{{$municipalities->id}}">{{ $municipalities->municipality }}</option>
+                                    @else
                                     <option value="{{$municipalities->id}}">{{ $municipalities->municipality }}</option>
+                                    @endif
                                 @endforeach
                             </select>
                         </div>

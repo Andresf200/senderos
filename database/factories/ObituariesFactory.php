@@ -18,7 +18,7 @@ class ObituariesFactory extends Factory
             'church' => $this->faker->randomElement(['Iglesia san cristobal clemente de la resurrecion','Capilla Divino Niño Jesus']),
             'hour' => $this->faker->randomElement(['10:30 AM','7:00 PM']),
             'cemetery' => $this->faker->randomElement(['Cementerio zarzal','Cementerio de cartago Valle del Cauca']),
-            'municipality_id' => Headquarters::factory(),
+            'municipality_id' => 2,
         ];
     }
 }

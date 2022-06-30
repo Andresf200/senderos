@@ -32,7 +32,7 @@
                         <a class="nav-link active" aria-current="page" href="{{ route('users.index') }}">Usuarios</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search" action="{{route('logout')}}">
+                <form method="POST" class="d-flex" role="search" action="{{ route('logout') }}">
                     @csrf
                     <a href="#" class="btn btn-primary" onclick="this.closest('form').submit()">
                         Cerrar sesión

@@ -52,9 +52,9 @@ class ObituariesController extends Controller
         ]);
     }
 
-    public function update(ObituariesUpdateRequest $request, Obituaries $obituarie)
+    public function update(ObituariesUpdateRequest $request, Obituaries $obituaries)
     {
-        dd($request);
+        dd($obituaries);
         $obituarie->update($request->validated());
 
         return redirect()

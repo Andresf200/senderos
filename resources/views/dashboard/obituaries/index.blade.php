@@ -9,7 +9,7 @@
         <div class="col-sm-12 col-md-12">
             <div class="card">
                 <div class="card-header d-flex justify-content-between align-items-center">
-                    Listado de usuarios
+                    Listado de obituarios
                     <a class="btn btn-success" href="{{ route('obituaries.create') }}">Crear</a>
                 </div>
                 <div class="card-body">

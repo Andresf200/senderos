@@ -9,7 +9,7 @@
         <div class="col-sm-12 col-md-8">
             <div class="card">
                 <div class="card-header">
-                    Editar usuarios
+                    Editar obituarios
                 </div>
                 <div class="card-body">
                     <form method="POST" action="{{ route('obituaries.update', $obituaries->id) }}">

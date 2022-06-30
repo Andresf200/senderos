@@ -19,21 +19,22 @@ class UserController extends Controller
 {
     public function index(): Factory|View|Application
     {
-        return view('users.index')->with([
+        return view('dashboard.users.index')->with([
             'users' => User::all(),
         ]);
     }
 
     public function show(User $user): Factory|View|Application
     {
-        return view('users.show')->with([
+        //todo aquí hace falta arreglar esto
+        return view('dashboard.users.create')->with([
             'user' => $user,
         ]);
     }
 
     public function edit(User $user): Factory|View|Application
     {
-        return view('users.edit')->with([
+        return view('dashboard.users.edit')->with([
             'user' => $user,
             'headquarters' => Headquarters::all(),
         ]);
@@ -50,6 +51,8 @@ class UserController extends Controller
 
     public function update(UpdateProfileRequest $request, User $user)
     {
+        // todo no esta llegando la data aquí a este punto
+        dd($request);
         $user->update($request->validated());
 
         return redirect()

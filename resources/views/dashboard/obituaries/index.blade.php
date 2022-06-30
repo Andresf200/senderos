@@ -50,8 +50,4 @@
             </div>
         </div>
     </div>
-    <script>
-        date = new Date().toLocaleDateString();
-        document.write(date);
-    </script>
 @endsection

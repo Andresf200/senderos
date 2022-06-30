@@ -21,6 +21,10 @@ class Obituaries extends Model
         'municipality_id',
     ];
 
+    protected $casts = [
+        'hour' => 'datetime'
+    ];
+
     public function headquarter(): BelongsTo
     {
         return $this->belongsTo(Headquarters::class, 'customer_id');

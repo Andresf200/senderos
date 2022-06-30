@@ -20,7 +20,7 @@ return new class extends Migration
             $table->date('date_death')->nullable();
             $table->string('wake')->nullable();
             $table->string('church',250)->nullable();
-            $table->string('hour')->nullable();
+            $table->time('hour')->nullable();
             $table->string('cemetery')->nullable();
             $table->unsignedBigInteger('municipality_id');
             $table->timestamps();

@@ -35,7 +35,7 @@
                                 <td>{{ $obituary->date_death }}</td>
                                 <td>{{ $obituary->wake }}</td>
                                 <td>{{ $obituary->church }}</td>
-                                <td>{{ $obituary->hour }}</td>
+                                <td>{{ $obituary->hour->isoFormat('H:mm:ss A') }}</td>
                                 <td>{{ $obituary->cemetery }}</td>
                                 <td>{{ $obituary->municipality_id }}</td>
                                 <td>
@@ -50,4 +50,8 @@
             </div>
         </div>
     </div>
+    <script>
+        date = new Date().toLocaleDateString();
+        document.write(date);
+    </script>
 @endsection

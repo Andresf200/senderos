@@ -19,7 +19,6 @@ class ObituariesController extends Controller
         $this->middleware('auth');
     }
 
-    //todo crear vista
     public function index(): Factory|View|Application
     {
         return view('dashboard.obituaries.index')->with([
@@ -37,29 +36,28 @@ class ObituariesController extends Controller
 
     public function store(ObituariesStoreRequest $request)
     {
-        $obituarie = Obituaries::create($request->validated());
+        $obituary = Obituaries::create($request->validated());
 
         return redirect()
-            ->route('dashboard.obituaries.index')
-            ->withSuccess("El nuevo obituario con id {$obituarie->id} fue creado");
+            ->route('obituaries.index')
+            ->withSuccess("El nuevo obituario con id {$obituary->id} fue creado");
     }
 
-    public function edit(Request $request)
+    public function edit(Request $request,Obituaries $obituary): Factory|View|Application
     {
         return view('dashboard.obituaries.edit')->with([
-            'obituaries' => $request->user(),
+            'obituary' => $obituary,
             'headquarters' => Headquarters::all(),
         ]);
     }
 
-    public function update(ObituariesUpdateRequest $request, Obituaries $obituaries)
+    public function update(ObituariesUpdateRequest $request, Obituaries $obituary)
     {
-        dd($obituaries);
-        $obituarie->update($request->validated());
+        $obituary->update($request->validated());
 
         return redirect()
-            ->route('dashboard.obituaries.index')
-            ->withSuccess("El obituario con id {$obituarie->id} fue editado");
+            ->route('obituaries.index')
+            ->withSuccess("El obituario con id {$obituary->id} fue editado");
     }
 
     public function destroy(Obituaries $obituarie)
@@ -67,7 +65,7 @@ class ObituariesController extends Controller
         $obituarie->delete();
 
         return redirect()
-            ->route('dashboard.obituaries.index')
+            ->route('obituaries.index')
             ->withSuccess("El obituario con id {$obituarie->id} fue eliminado");
     }
 }

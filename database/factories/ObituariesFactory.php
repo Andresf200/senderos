@@ -14,7 +14,7 @@ class ObituariesFactory extends Factory
             'name_deceased' => $this->faker->name(),
             'family' => $this->faker->name(),
             'date_death' => $this->faker->date(),
-            'wake' => $this->faker->paragraph(),
+            'wake' => $this->faker->randomElement(['sede central cartago','sede bolivar zarzal']),
             'church' => $this->faker->randomElement(['Iglesia san cristobal clemente de la resurrecion','Capilla Divino Niño Jesus']),
             'hour' => $this->faker->randomElement(['10:30 AM','7:00 PM']),
             'cemetery' => $this->faker->randomElement(['Cementerio zarzal','Cementerio de cartago Valle del Cauca']),

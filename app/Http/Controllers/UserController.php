@@ -51,8 +51,6 @@ class UserController extends Controller
 
     public function update(UpdateProfileRequest $request, User $user)
     {
-        // todo no esta llegando la data aquí a este punto
-        dd($request);
         $user->update($request->validated());
 
         return redirect()
@@ -66,7 +64,7 @@ class UserController extends Controller
         $user->delete();
 
         return redirect()
-            ->route('products.index')
+            ->route('users.index')
             ->withSuccess("El usuario con id {$user->id} fue eliminado");
     }
 }

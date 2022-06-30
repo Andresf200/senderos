@@ -12,7 +12,8 @@
                     Crear obituarios
                 </div>
                 <div class="card-body">
-                    <form>
+                    <form method="POST" action="{{route('obituaries.store')}}">
+                        @csrf
                         <div class="mb-3">
                             <label class="form-label">Nombre completo</label>
                             <input type="text" class="form-control" placeholder="Nombre completo" name="name_deceased">

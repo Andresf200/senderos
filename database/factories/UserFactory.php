@@ -19,7 +19,7 @@ class UserFactory extends Factory
             'identifier'  => $this->faker->randomNumber(9),
             'phone' => $this->faker->randomNumber(9),
             'address' => $this->faker->address() ,
-            'municipality_id' => Headquarters::factory(),
+            'municipality_id' => 1,
             'admin' => $this->faker->randomElement([User::USUARIO_ADMINISTRADOR, User::USUARIO_REGULAR]),
             'email' => $this->faker->email(),
             'password' => 'password', // password,

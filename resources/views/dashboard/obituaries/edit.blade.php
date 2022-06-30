@@ -12,34 +12,42 @@
                     Editar obituarios
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="{{ route('obituaries.update', $obituaries->id) }}">
+
+                    <form method="POST" action="{{ route('obituaries.update', $obituary->id) }}">
                         @csrf
                         @method('PUT')
                         <div class="mb-3">
-                            <label class="form-label">Nombres</label>
-                            <input type="text" value="{{ $obituaries->name }}" class="form-control" placeholder="Nombres" name="name">
+                            <label class="form-label">Nombre completo</label>
+                            <input type="text" value="{{$obituary->name_deceased}}" class="form-control" placeholder="Nombre completo" name="name_deceased">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Apellidos</label>
-                            <input type="text" value="{{ $obituaries->last_name }}" class="form-control" placeholder="Apellidos" name="last_name">
+                            <label class="form-label">Familia</label>
+                            <input type="text" value="{{$obituary->family}}" class="form-control" placeholder="Familia" name="family">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Identificación</label>
-                            <input type="text" value="{{ $obituaries->identifier }}" class="form-control" placeholder="Identificación" name="identifier">
+                            <label class="form-label">Fecha de fallecimiento</label>
+                            <input type="date" value="{{$obituary->date_death}}" class="form-control" name="date_death">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Teléfono</label>
-                            <input type="text" value="{{ $obituaries->phone }}" class="form-control" placeholder="Teléfono" name="phone">
+                            <label class="form-label">Sala de velación</label>
+                            <input type="text" value="{{$obituary->wake}}" class="form-control" placeholder="Sala velación" name="wake">
                         </div>
                         <div class="mb-3">
-                            <label class="form-label">Dirección</label>
-                            <input type="text" value="{{ $obituaries->address }}" class="form-control" placeholder="Dirección" name="address">
+                            <label class="form-label">Iglesia</label>
+                            <input type="text" value="{{$obituary->church}}"  class="form-control" placeholder="iglesia" name="church">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Hora</label>
+                            <input type="time"  value="{{$obituary->hour}}" class="form-control" name="hour">
+                        </div>
+                        <div class="mb-3">
+                            <label class="form-label">Cementerio</label>
+                            <input type="text" value="{{$obituary->cemetery}}" class="form-control" placeholder="Cementerio" name="cemetery">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Municipio</label>
-
                             <select class="form-select" name="municipality_id">
-                                <option value="{{ $obituaries->municipality_id }}" selected>Municipio</option>
+                                <option value="{{ $obituary->municipality_id }}" selected>Municipio</option>
                                 @foreach($headquarters as $municipalities)
                                     <option value="{{$municipalities->id}}">{{ $municipalities->municipality }}</option>
                                 @endforeach
@@ -52,4 +60,5 @@
         </div>
     </div>
 @endsection
+
 

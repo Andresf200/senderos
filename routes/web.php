@@ -49,7 +49,7 @@ Route::resource('/carrousel',CarrouselController::class)
 
 Route::resource('/obituaries',ObituariesController::class)
     ->names('obituaries')
-    ->except(['show']);
+    ->only(['index','create','store','edit','update','destroy']);
 
 Route::get('/register',function(){
     return view('dashboard.register')->with([

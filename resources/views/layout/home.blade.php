@@ -17,28 +17,30 @@
 </head>
 <body>
 @section('navbar')
-    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #00BCD4">
+    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #034672">
         <div class="container-fluid">
             <a class="navbar-brand" href="#">Senderos de Paz</a>
-            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
-                    data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
-                    aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
+                    aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('carrousel.index') }}">Carrousel</a>
+                        <a class="nav-link active" aria-current="page" href="{{route('home')}}">Inicio</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('obituaries.client') }}">Obituarios</a>
+                        <a class="nav-link" href="{{ route('zafiro') }}">Zafiro</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('obituario') }}">Obituario</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('headquarters') }}">Nuestras sedes</a>
                     </li>
                 </ul>
-                <form class="d-flex" role="search" action="{{route('logout')}}">
-                    @csrf
-                    <a href="#" class="btn btn-primary" onclick="this.closest('form').submit()">
-                        Cerrar sesión
-                    </a>
+                <form class="d-flex" role="search">
+                    <a class="btn btn-success" href="{{ route('login') }}">Iniciar sesión</a>
                 </form>
             </div>
         </div>

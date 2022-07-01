@@ -27,7 +27,9 @@ class UserController extends Controller
     public function create(): Factory|View|Application
     {
         //todo aquí hace falta arreglar esto
-        return view('dashboard.users.create');
+        return view('dashboard.users.create')->with([
+            'headquarters' => Headquarters::all(),
+        ]);
     }
 
     public function edit(User $user): Factory|View|Application
@@ -40,7 +42,7 @@ class UserController extends Controller
 
     public function register(RegisterRequest $request)
     {
-
+        dd($request->all());
         $user = User::create($request->validated());
         return redirect()
             ->route('users.index')

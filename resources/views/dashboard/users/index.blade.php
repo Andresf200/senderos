@@ -11,7 +11,7 @@
                 <div class="card-header d-flex justify-content-between align-items-center">
                     Listado de usuarios
 {{--                    // todo quitar ese id que no tiene que ir--}}
-                    <a class="btn btn-success" href="{{ route('users.show', 1) }}">Crear</a>
+                    <a class="btn btn-success" href="{{ route('users.create') }}">Crear</a>
                 </div>
                 <div class="card-body">
                     <table class="table table-responsive w-100">

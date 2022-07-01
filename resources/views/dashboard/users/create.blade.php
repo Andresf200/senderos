@@ -12,31 +12,31 @@
                     Editar usuarios
                 </div>
                 <div class="card-body">
-                    <form method="POST" action="{{ route('users.update', $user->id) }}">
+                    <form method="POST" action="{{ route('users.store') }}">
                         @csrf
                         <div class="mb-3">
                             <label class="form-label">Nombres</label>
-                            <input type="text" value="{{ $user->name }}" class="form-control" placeholder="Nombres"
+                            <input type="text" class="form-control" placeholder="Nombres"
                                    name="name">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Apellidos</label>
-                            <input type="text" value="{{ $user->last_name }}" class="form-control"
+                            <input type="text" class="form-control"
                                    placeholder="Apellidos" name="last_name">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Identificación</label>
-                            <input type="text" value="{{ $user->identifier }}" class="form-control"
+                            <input type="text" class="form-control"
                                    placeholder="Identificación" name="identifier">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Teléfono</label>
-                            <input type="text" value="{{ $user->phone }}" class="form-control" placeholder="Teléfono"
+                            <input type="text" class="form-control" placeholder="Teléfono"
                                    name="phone">
                         </div>
                         <div class="mb-3">
                             <label class="form-label">Dirección</label>
-                            <input type="text" value="{{ $user->address }}" class="form-control" placeholder="Dirección"
+                            <input type="text" class="form-control" placeholder="Dirección"
                                    name="address">
                         </div>
                         <div class="mb-3">

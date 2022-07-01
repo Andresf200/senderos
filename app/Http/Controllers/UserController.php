@@ -24,12 +24,10 @@ class UserController extends Controller
         ]);
     }
 
-    public function show(User $user): Factory|View|Application
+    public function create(): Factory|View|Application
     {
         //todo aquí hace falta arreglar esto
-        return view('dashboard.users.create')->with([
-            'user' => $user,
-        ]);
+        return view('dashboard.users.create');
     }
 
     public function edit(User $user): Factory|View|Application

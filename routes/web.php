@@ -61,8 +61,7 @@ Route::post('/register',[UserController::class,'register'])->name('register');
 
 Route::resource('/users',UserController::class)
     ->names('users')
-    ->only(['index','show','edit','update','destroy'])
-    ->middleware('is.admin');
+    ->only(['index','create','store,','edit','update','destroy']);
 
 Route::get('/obituariesClient',function(){
     return view('dashboard.obituaries.index')

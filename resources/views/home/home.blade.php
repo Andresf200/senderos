@@ -114,272 +114,186 @@
     </div>
     <div class="row bg-light justify-content-center">
         <div class="col-md-8">
-            <div class="accordion" id="accordionExample">
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseOne" aria-expanded="false" aria-controls="collapseOne">
-                            Planes familiares
-                        </button>
-                    </h2>
-                    <div id="collapseOne" class="accordion-collapse collapse" aria-labelledby="headingOne"
-                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="card w-70">
-                                <img src="{{asset('img/familia.jpg')}}" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text">Plan diseñado para las familias de hoy
-                                        INFORMACIÓN
-                                        Cel 3104511207 / (2) 2148567</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
-                            Planes empresariales
-                        </button>
-                    </h2>
-                    <div id="collapseTwo" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="card w-100" style="width: 18rem;">
-                                <img src="{{asset('img/empresarial.jpg')}}" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text">Planes acordes al tamaño de su empresa y necesidades de sus
-                                        colaboradores
-                                        INFORMACIÓN Cel 3204812453 / (2) 2148567</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingThree">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
-                            Apoyo Psicosocial
-                        </button>
-                    </h2>
-                    <div id="collapseThree" class="accordion-collapse collapse" aria-labelledby="headingThree"
-                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="card w-100">
-                                <img src="{{asset('img/psicosocial.jpg')}}" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text">Planes acordes al tamaño de su empresa y necesidades de sus
-                                        colaboradores
-                                        INFORMACIÓN Cel 3204812453 / (2) 2148567</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFour" aria-expanded="false" aria-controls="collapseTwo">
-                            Plan Galardón
-                        </button>
-                    </h2>
-                    <div id="collapseFour" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="card w-100" style="width: 18rem;">
-                                <img src="{{asset('img/galardon.jpg')}}" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text">Plan especial diseñado para la comunidad cristiana
-                                        INFORMACIÓN Cel 3204812453 / (2) 2148567</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseFive" aria-expanded="false" aria-controls="collapseTwo">
-                            Titulo Diamante
-                        </button>
-                    </h2>
-                    <div id="collapseFive" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="card w-100" style="width: 18rem;">
-                                <img src="{{asset('img/diamante.jpg')}}" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text">Senderos integra un producto para tu adulto mayor, este
-                                        título ha sido creado para personas de 80 años en adelante, este servicio es
-                                        transferible.
-                                        INFORMACIÓN
-                                        Cel 3104511207 / (2) 2148567</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseSix" aria-expanded="false" aria-controls="collapseTwo">
-                            Plan Pueblo
-                        </button>
-                    </h2>
-                    <div id="collapseSix" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="card w-100" style="width: 18rem;">
-                                <img src="{{asset('img/pueblo.png')}}" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text">Plan especial diseñado para la comunidad de tu pueblo.
-                                        INFORMACIÓN
-                                        Cel 3104511207 / (2) 2148567</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseSeven" aria-expanded="false" aria-controls="collapseTwo">
-                            Plan Acuavalle
-                        </button>
-                    </h2>
-                    <div id="collapseSeven" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="card w-100" style="width: 18rem;">
-                                <img src="{{asset('img/Acuavalle.jpg')}}" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text">Para los usuarios de la empresa de servicios de Acuavalle
-                                        cobro a través de la factura de servicio.
-                                        INFORMACIÓN
-                                        Cel 3104511207 / (2) 2148567</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseEight" aria-expanded="false" aria-controls="collapseTwo">
-                            Plan bono canasta
-                        </button>
-                    </h2>
-                    <div id="collapseEight" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="card w-100" style="width: 18rem;">
-                                <img src="{{asset('img/bonocanasta.jpg')}}" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text">Seguro adicional a tu plan de previsión exequial
-                                        INFORMACIÓN
-                                        Cel 3104511207 / (2) 2148567</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseNine" aria-expanded="false" aria-controls="collapseTwo">
-                            Plan ERT
-                        </button>
-                    </h2>
-                    <div id="collapseNine" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="card w-100" style="width: 18rem;">
-                                <img src="{{asset('img/Ert.jpg')}}" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text">Para los usuarios de la Empresa Regional de
-                                        Telecomunicaciones en el Valle cobro a través de la factura ERT
-                                        INFORMACIÓN
-                                        Cel 3104511207 / (2) 2148567</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTen" aria-expanded="false" aria-controls="collapseTwo">
-                            Plan integral
-                        </button>
-                    </h2>
-                    <div id="collapseTen" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="card w-100" style="width: 18rem;">
-                                <img src="{{asset('img/integral.jpg')}}" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text">Plan de previsión exequial que cubre un grupo amplio de la
-                                        familia
-                                        INFORMACIÓN
-                                        Cel 3104511207 / (2) 2148567</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseEleven" aria-expanded="false" aria-controls="collapseTwo">
-                            Plan mascota
-                        </button>
-                    </h2>
-                    <div id="collapseEleven" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="card w-100" style="width: 18rem;">
-                                <img src="{{asset('img/mascotas.jpg')}}" class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <p class="card-text">Protege a tu mascota, ellos también hacen parte de tu
-                                        familia.
-                                        INFORMACIÓN
-                                        Cel 3104511207 / (2) 2138567</p>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-                <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
-                                data-bs-target="#collapseTwelve" aria-expanded="false" aria-controls="collapseTwo">
-                            Repatriación
-                        </button>
-                    </h2>
-                    <div id="collapseTwelve" class="accordion-collapse collapse" aria-labelledby="headingTwo"
-                         data-bs-parent="#accordionExample">
-                        <div class="accordion-body">
-                            <div class="card w-100" style="width: 18rem;">
-                                <img
-                                    src="{{asset('img/vista-superior-aviones-sobre-fondo-azul_23-2148580909.webp')}}"
-                                    class="card-img-top" alt="...">
-                                <div class="card-body">
-                                    <ul>
-                                        <li>Tramites legales Completo.</li>
-                                        <li>Traslado del cuerpo hasta el aeropuerto internacional mas cercano.</li>
-                                        <li>Traslado Nacional hacia la sala de velacion dispuesta por nuestra
-                                            compañia.
-                                        </li>
-                                        <li>Todos los costos de repatriacion estan cubiertos por FINSA.</li>
-                                    </ul>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
+{{--            <div class="swiper mt-3">--}}
+{{--                <!-- Additional required wrapper -->--}}
+{{--                <div class="swiper-wrapper">--}}
+{{--                    <!-- Slides -->--}}
+{{--                    <div class="swiper-slide p-5 d-flex justify-content-center align-items-center">--}}
+{{--                        <div class="row">--}}
+{{--                            <div class="col-12">--}}
+{{--                                <div class="card" style="width: 500px">--}}
+{{--                                    Planes familiares--}}
+{{--                                    <img src="{{asset('img/familia.jpg')}}" class="card-img-top" alt="...">--}}
+{{--                                    <div class="card-body">--}}
+{{--                                        <p class="card-text">Plan diseñado para las familias de hoy--}}
+{{--                                            INFORMACIÓN--}}
+{{--                                            Cel 3104511207 / (2) 2148567</p>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+
+{{--                    </div>--}}
+{{--                    <div class="swiper-slide pt-5 pb-5 d-flex justify-content-center align-items-center">--}}
+{{--                        <div class="row">--}}
+{{--                            <div class="col-12">--}}
+{{--                                <div class="card" style="width: 500px;">--}}
+{{--                                    Planes empresariales--}}
+{{--                                    <img src="{{asset('img/empresarial.jpg')}}" class="card-img-top" alt="...">--}}
+{{--                                    <div class="card-body">--}}
+{{--                                        <p class="card-text">Planes acordes al tamaño de su empresa y necesidades de sus--}}
+{{--                                            colaboradores--}}
+{{--                                            INFORMACIÓN Cel 3204812453 / (2) 2148567</p>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="swiper-slide pt-5 pb-5 d-flex justify-content-center align-items-center">--}}
+{{--                        <div class="row">--}}
+{{--                            <div class="col">--}}
+{{--                                <div class="card w-100" style="width: 500px;">--}}
+{{--                                    Apoyo Psicosocial--}}
+{{--                                    <img src="{{asset('img/psicosocial.jpg')}}" class="card-img-top" alt="...">--}}
+{{--                                    <div class="card-body">--}}
+{{--                                        <p class="card-text">Planes acordes al tamaño de su empresa y necesidades de sus--}}
+{{--                                            colaboradores--}}
+{{--                                            INFORMACIÓN Cel 3204812453 / (2) 2148567</p>--}}
+{{--                                    </div>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="swiper-slide pt-5 pb-5 d-flex justify-content-center align-items-center">--}}
+{{--                        <div class="accordion-body">--}}
+{{--                            <div class="card w-100" style="width: 18rem;">--}}
+{{--                                Plan Galardón--}}
+{{--                                <img src="{{asset('img/galardon.jpg')}}" class="card-img-top" alt="...">--}}
+{{--                                <div class="card-body">--}}
+{{--                                    <p class="card-text">Plan especial diseñado para la comunidad cristiana--}}
+{{--                                        INFORMACIÓN Cel 3204812453 / (2) 2148567</p>--}}
+{{--                                </div>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                    <div class="swiper-slide pt-5 pb-5 d-flex justify-content-center align-items-center">--}}
+{{--                        Titulo Diamante--}}
+{{--                        <div class="card w-100" style="width: 18rem;">--}}
+{{--                            <img src="{{asset('img/diamante.jpg')}}" class="card-img-top" alt="...">--}}
+{{--                            <div class="card-body">--}}
+{{--                                <p class="card-text">Senderos integra un producto para tu adulto mayor, este--}}
+{{--                                    título ha sido creado para personas de 80 años en adelante, este servicio es--}}
+{{--                                    transferible.--}}
+{{--                                    INFORMACIÓN--}}
+{{--                                    Cel 3104511207 / (2) 2148567</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+
+{{--                    <div class="swiper-slide pt-5 pb-5 d-flex justify-content-center align-items-center">--}}
+{{--                        Plan Pueblo--}}
+{{--                        <div class="card w-100" style="width: 18rem;">--}}
+{{--                            <img src="{{asset('img/pueblo.png')}}" class="card-img-top" alt="...">--}}
+{{--                            <div class="card-body">--}}
+{{--                                <p class="card-text">Plan especial diseñado para la comunidad de tu pueblo.--}}
+{{--                                    INFORMACIÓN--}}
+{{--                                    Cel 3104511207 / (2) 2148567</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+
+{{--                    <div class="swiper-slide pt-5 pb-5 d-flex justify-content-center align-items-center">--}}
+{{--                        Plan Acuavalle--}}
+{{--                        <div class="card w-100" style="width: 18rem;">--}}
+{{--                            <img src="{{asset('img/Acuavalle.jpg')}}" class="card-img-top" alt="...">--}}
+{{--                            <div class="card-body">--}}
+{{--                                <p class="card-text">Para los usuarios de la empresa de servicios de Acuavalle--}}
+{{--                                    cobro a través de la factura de servicio.--}}
+{{--                                    INFORMACIÓN--}}
+{{--                                    Cel 3104511207 / (2) 2148567</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+
+{{--                    <div class="swiper-slide pt-5 pb-5 d-flex justify-content-center align-items-center">--}}
+{{--                        Plan bono canasta--}}
+{{--                        <div class="card w-100" style="width: 18rem;">--}}
+{{--                            <img src="{{asset('img/bonocanasta.jpg')}}" class="card-img-top" alt="...">--}}
+{{--                            <div class="card-body">--}}
+{{--                                <p class="card-text">Seguro adicional a tu plan de previsión exequial--}}
+{{--                                    INFORMACIÓN--}}
+{{--                                    Cel 3104511207 / (2) 2148567</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+
+
+{{--                    <div class="swiper-slide pt-5 pb-5 d-flex justify-content-center align-items-center">--}}
+{{--                        Plan ERT--}}
+{{--                        <div class="card w-100" style="width: 18rem;">--}}
+{{--                            <img src="{{asset('img/Ert.jpg')}}" class="card-img-top" alt="...">--}}
+{{--                            <div class="card-body">--}}
+{{--                                <p class="card-text">Para los usuarios de la Empresa Regional de--}}
+{{--                                    Telecomunicaciones en el Valle cobro a través de la factura ERT--}}
+{{--                                    INFORMACIÓN--}}
+{{--                                    Cel 3104511207 / (2) 2148567</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+
+{{--                    <div class="swiper-slide pt-5 pb-5 d-flex justify-content-center align-items-center">--}}
+{{--                        Plan integral--}}
+{{--                        <div class="card w-100" style="width: 18rem;">--}}
+{{--                            <img src="{{asset('img/integral.jpg')}}" class="card-img-top" alt="...">--}}
+{{--                            <div class="card-body">--}}
+{{--                                <p class="card-text">Plan de previsión exequial que cubre un grupo amplio de la--}}
+{{--                                    familia--}}
+{{--                                    INFORMACIÓN--}}
+{{--                                    Cel 3104511207 / (2) 2148567</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+
+{{--                    <div class="swiper-slide pt-5 pb-5 d-flex justify-content-center align-items-center">--}}
+{{--                        Plan mascota--}}
+{{--                        <div class="card w-100" style="width: 18rem;">--}}
+{{--                            <img src="{{asset('img/mascotas.jpg')}}" class="card-img-top" alt="...">--}}
+{{--                            <div class="card-body">--}}
+{{--                                <p class="card-text">Protege a tu mascota, ellos también hacen parte de tu--}}
+{{--                                    familia.--}}
+{{--                                    INFORMACIÓN--}}
+{{--                                    Cel 3104511207 / (2) 2138567</p>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+
+{{--                    <div class="swiper-slide pt-5 pb-5 d-flex justify-content-center align-items-center">--}}
+{{--                        Repatriación--}}
+{{--                        <div class="card w-100" style="width: 18rem;">--}}
+{{--                            <img--}}
+{{--                                src="{{asset('img/vista-superior-aviones-sobre-fondo-azul_23-2148580909.webp')}}"--}}
+{{--                                class="card-img-top" alt="...">--}}
+{{--                            <div class="card-body">--}}
+{{--                                <ul>--}}
+{{--                                    <li>Tramites legales Completo.</li>--}}
+{{--                                    <li>Traslado del cuerpo hasta el aeropuerto internacional mas cercano.</li>--}}
+{{--                                    <li>Traslado Nacional hacia la sala de velacion dispuesta por nuestra--}}
+{{--                                        compañia.--}}
+{{--                                    </li>--}}
+{{--                                    <li>Todos los costos de repatriacion estan cubiertos por FINSA.</li>--}}
+{{--                                </ul>--}}
+{{--                            </div>--}}
+{{--                        </div>--}}
+{{--                    </div>--}}
+{{--                </div>--}}
+{{--                <!-- If we need pagination -->--}}
+{{--                <div class="swiper-pagination"></div>--}}
+
+{{--                <!-- If we need navigation buttons -->--}}
+
+{{--                <!-- If we need scrollbar -->--}}
+{{--                <div class="swiper-scrollbar"></div>--}}
+{{--            </div>--}}
         </div>
     </div>
     <div class="row bg-light p-5">

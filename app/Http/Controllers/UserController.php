@@ -42,7 +42,6 @@ class UserController extends Controller
 
     public function register(RegisterRequest $request)
     {
-        dd($request->all());
         $user = User::create($request->validated());
         return redirect()
             ->route('users.index')

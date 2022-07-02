@@ -21,18 +21,17 @@ class RegisterRequest extends FormRequest
         return [
             'name' => ['required', 'string', 'max:255'],
             'last_name' => ['required', 'string', 'max:255'],
-            'identifier' => ['required', 'integer', 'max:18'],
-            'phone' => ['integer', 'max:16'],
+            'identifier' => ['required', 'integer'],
+            'phone' => ['integer'],
             'address' => ['string', 'max:255'],
             'municipality_id' => ['exists:App\Models\Headquarters,id'],
             'password' => [
                 'required',
-                'confirmed',
                 Password::min(8)
                     ->mixedCase()
                     ->letters()
                     ->numbers()
-                    ->uncompromised(),
+                    ->uncompromised()
             ],
             'email' => [
                 'required',

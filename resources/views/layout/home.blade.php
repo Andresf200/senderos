@@ -17,9 +17,9 @@
 </head>
 <body>
 @section('navbar')
-    <nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #034672">
+    <nav class="navbar navbar-expand-lg navbar-light" style="background-color: #00bcd4">
         <div class="container-fluid">
-            <a class="navbar-brand" href="#">Senderos de Paz</a>
+            <img src="{{ asset('img/logo.png') }}" class="p-1" width="auto" height="70" alt="">
             <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent"
                     aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
                 <span class="navbar-toggler-icon"></span>
@@ -40,7 +40,7 @@
                     </li>
                 </ul>
                 <form class="d-flex" role="search">
-                    <a class="btn btn-success" href="{{ route('login') }}">Iniciar sesión</a>
+                    <a class="nav-link" href="{{ route('login') }}">Iniciar sesión</a>
                 </form>
             </div>
         </div>

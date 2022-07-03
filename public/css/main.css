@@ -36,7 +36,7 @@ body{
 }
 .carousel--item{
     height: 100%;
-    width: 80%;
+    width: 100%;
     clip-path: circle(50% at 50% 50%);
 
 }

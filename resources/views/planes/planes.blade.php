@@ -1,6 +1,6 @@
 @extends('layout.home')
 
-@section('title', 'Obituarios')
+@section('title', 'Planes')
 
 @section('home')@endsection
 

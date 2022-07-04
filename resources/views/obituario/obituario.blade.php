@@ -7,7 +7,6 @@
 @section('content')
 <div class="container mt-5">
     <div class="row justify-content-center">
-        @dd($obituaries)
         <div class="col-6 p-5 bg-light">
             <h1 class="font text-center">Obituarios</h1>
             <p class="mt-5">En esta sección encontrará los datos de los servicios funerarios que se encuentran actualmente en velación en las diferentes sedes de la Red de Senderos de Paz. Puede realizar un filtro por la ciudad de su búsqueda en la siguiente casilla:</p>
@@ -21,14 +20,30 @@
         </div>
     </div>
     <div class="row">
+        @foreach($obituaries as $obituarie)
         <div class="col-3 mt-5">
             <div class="card">
-                <div class="card-header text-center">
-                    Finsa
+                <div class="card-header">
+                    <strong>Nombre:</strong>{{ $obituarie->name_deceased }}
                 </div>
-                <img src="{{ asset('img/finsa.jpg')  }}" class="img-thumbnail" alt="fenalco">
+                <div class="card-body">
+                    <strong>Familia: </strong>{{ $obituarie->family }}
+                    <br>
+                    <strong>Fecha de fallecimiento: </strong>{{ $obituarie->date_death }}
+                    <br>
+                    <strong>Sala de velación: </strong>{{ $obituarie->wake }}
+                    <br>
+                    <strong>Iglesia: </strong>{{ $obituarie->church }}
+                    <br>
+                    <strong>Hora: </strong>{{ $obituarie->hour }}
+                    <br>
+                    <strong>Cementerio: </strong>{{ $obituarie->cemetery }}
+                    <br>
+                    <strong>Municipio: </strong>{{ $obituarie->municipality_id }}
+                </div>
             </div>
         </div>
+        @endforeach
     </div>
 </div>
 @endsection

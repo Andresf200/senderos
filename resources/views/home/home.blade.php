@@ -47,10 +47,12 @@
             </div>
         </div>
     </div>
-    <div class="row bg-light">
+</div>
+<div class="container rounded-4 shadow-lg bg-light mt-1">
+    <div class="row justify-content-around">
         <h1 class="font2 text-black text-center mt-5">Senderos de Paz siempre al alcance de ti</h1>
-        <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center pt-5 pb-5">
-            <div class="card" style="height: 600px; width: 80%">
+        <div class="col-md-5 col-sm-12 pt-5 pb-5">
+            <div class="card shadow-lg" style="height: 600px;">
                 <div class="card-body">
                     <iframe class="w-100 h-100" src="https://www.youtube.com/embed/bNsaDuHrHiw"
                             title="YouTube video player" frameborder="0"
@@ -76,9 +78,9 @@
             </div>
         </div>
 
-        <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center bg-light pt-5 pb-5"
+        <div class="col-md-5 col-sm-12 d-flex justify-content-center align-items-center bg-light pt-5 pb-5"
              style="background-color: #cdd5da">
-            <div class="card" style="height: 600px">
+            <div class="card shadow-lg" style="height: 600px">
                 <div class="card-body">
                     <form>
                         <h3 class="text-center">Contactanos</h3>
@@ -112,7 +114,7 @@
         </div>
         <h1 class="font2 text-center mb-5 mt-5">Conoce nuestros productos</h1>
     </div>
-    <div class="row bg-light justify-content-center">
+    <div class="row justify-content-center">
 
         <div class="col-md-8 mt-5 mb-5 d-flex justify-content-between align-items-between flex-wrap">
             <a href="{{ route('pagos') }}">
@@ -123,10 +125,10 @@
             </a>
         </div>
     </div>
-    <div class="row bg-light p-5">
+    <div class="row p-5">
         <h1 class="font2 text-center mt-5 ">Federación nacional de comerciantes</h1>
         <div class="col-3 mt-5">
-            <div class="card">
+            <div class="card shadow-lg">
                 <div class="card-header text-center">
                     Fenalco
                 </div>
@@ -134,7 +136,7 @@
             </div>
         </div>
         <div class="col-3 mt-5">
-            <div class="card">
+            <div class="card shadow-lg">
                 <div class="card-header text-center">
                     Finsa
                 </div>
@@ -142,7 +144,7 @@
             </div>
         </div>
         <div class="col-3 mt-5">
-            <div class="card">
+            <div class="card shadow-lg">
                 <div class="card-header text-center">
                     Remanso
                 </div>
@@ -150,7 +152,7 @@
             </div>
         </div>
         <div class="col-3 mt-5">
-            <div class="card">
+            <div class="card shadow-lg">
                 <div class="card-header text-center">
                     Sena
                 </div>
@@ -158,7 +160,7 @@
             </div>
         </div>
     </div>
-    <div class="row bg-light justify-content-center">
+    <div class="row justify-content-center">
         <h3 class="font2 text-center mb-5 mt-5">Conoce nuestras formas de pago</h3>
         <div class="col-md-10">
             <div class="swiper mt-3 mb-5">

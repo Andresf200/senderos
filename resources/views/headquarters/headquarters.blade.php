@@ -5,14 +5,12 @@
 @section('home')@endsection
 
 @section('content')
-<div class="container mt-5">
+<div class="container rounded-4 mt-5 pb-5 bg-light">
     <div class="row justify-content-center bg-light">
         <div class="col p-5">
             <h1 class="font2 text-center">Sedes senderos de paz</h1>
         </div>
     </div>
-</div>
-<div class="container pb-5 bg-light">
     <div class="row">
         <div class="col-sm-12 col-md-6">
             <table class="table shadow-lg table-responsive">

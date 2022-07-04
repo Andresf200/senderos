@@ -13,6 +13,7 @@
                     actualmente en velación en las diferentes sedes de la Red de Senderos de Paz. Puede realizar un
                     filtro por la ciudad de su búsqueda en la siguiente casilla:</p>
                 <form method="POST" action="">
+                    @csrf
                     <div class="d-flex justify-content center align-items-center">
                         <select class="form-select" name="municipality_id">
                             <option selected>Seleccione un municipio</option>
@@ -20,7 +21,7 @@
                                 <option value="{{$municipalities->id}}">{{ $municipalities->municipality }}</option>
                             @endforeach
                         </select>
-                        <button class="btn btn-primary m-1">Buscar</button>
+                        <button type="submit" class="btn btn-primary m-1">Buscar</button>
                     </div>
                 </form>
             </div>

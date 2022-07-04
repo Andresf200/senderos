@@ -45,7 +45,7 @@
                         <a class="nav-link" href="{{ route('planes') }}">Planes</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('exequiales') }}">Exequiales</a>
+                        <a class="nav-link" href="{{ route('pagos') }}">Pagos</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">

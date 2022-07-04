@@ -19,7 +19,7 @@ Route::view('/zafiro.zafiro', 'zafiro.zafiro')->name('zafiro');
 
 Route::view('/planes.planes', 'planes.planes')->name('planes');
 
-Route::view('/exequiales.exequiales', 'exequiales.exequiales')->name('exequiales');
+Route::view('/pagos.pagos', 'pagos.pagos')->name('pagos');
 
 Route::view('/obituario.obituario', 'obituario.obituario')->name('obituario');
 

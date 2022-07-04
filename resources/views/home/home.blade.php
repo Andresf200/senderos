@@ -113,8 +113,11 @@
         <h1 class="font2 text-center mb-5 mt-5">Conoce nuestros productos</h1>
     </div>
     <div class="row bg-light justify-content-center">
+
         <div class="col-md-8 mt-5 mb-5 d-flex justify-content-between align-items-between flex-wrap">
-            <img src="{{ asset('img/pago.png') }}" class="p-1" width="auto" height="100" alt="">
+            <a href="{{ route('pagos') }}">
+                <img src="{{ asset('img/pago.png') }}" class="p-1" width="auto" height="100" alt="">
+            </a>
             <a href="{{ route('planes') }}">
                 <img src="{{ asset('img/planes.png') }}" class="p-1" width="auto" height="100" alt="">
             </a>

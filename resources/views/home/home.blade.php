@@ -9,7 +9,7 @@
     <div class="row bg-light carousel--item ">
         <div class="col-12 flex-column d-flex justify-content-center align-items-center ">
             <img class="" src="{{ asset('img/logo.png') }}" height="200" alt="">
-            <h1 class="text-center ml-5 mr-5 text-black font">Bienvenidos a senderos de paz</h1>
+            <h1 class="text-center ml-5 mr-5 text-black font">Bienvenidos a <br> Senderos de Paz</h1>
         </div>
     </div>
 </div>
@@ -48,7 +48,7 @@
         </div>
     </div>
     <div class="row bg-light">
-        <h1 class="font2 text-black text-center mt-5">Senderos de paz siempre al alcance de ti</h1>
+        <h1 class="font2 text-black text-center mt-5">Senderos de Paz siempre al alcance de ti</h1>
         <div class="col-md-6 col-sm-12 d-flex justify-content-center align-items-center pt-5 pb-5">
             <div class="card" style="height: 600px; width: 80%">
                 <div class="card-body">
@@ -58,7 +58,7 @@
                             allowfullscreen></iframe>
                 </div>
                 <div class="card-body ">
-                    <h3 class="font2 text-center">Siguenos en redes sociales</h3>
+                    <h3 class="text-center">Siguenos en redes sociales</h3>
                     <div class="d-flex justify-content-around align-items-center mt-5">
                         <a href="https://www.facebook.com/senderosdepazoficial/" target="_blank">
                             <img class="m-2" src="{{ asset('img/facebook.webp') }}" height="50" alt="logo_facebook">
@@ -81,7 +81,7 @@
             <div class="card" style="height: 600px">
                 <div class="card-body">
                     <form>
-                        <h3 class="font2 text-center">Contactanos</h3>
+                        <h3 class="text-center">Contactanos</h3>
                         <div class="mb-3">
                             <label class="form-label">Nombre completo</label>
                             <input type="text" class="form-control" placeholder="Nombre completo">
@@ -110,28 +110,55 @@
                 </div>
             </div>
         </div>
-        <h1 class="font2 text-center mb-5">Conoce nuestros productos</h1>
+        <h1 class="font2 text-center mb-5 mt-5">Conoce nuestros productos</h1>
     </div>
     <div class="row bg-light justify-content-center">
-        <div class="col-md-8">
-            planes excequiales
+        <div class="col-md-8 mt-5 mb-5 d-flex justify-content-between align-items-between flex-wrap">
+            <img src="{{ asset('img/pago.png') }}" class="p-1" width="auto" height="100" alt="">
+            <a href="{{ route('planes') }}">
+                <img src="{{ asset('img/planes.png') }}" class="p-1" width="auto" height="100" alt="">
+            </a>
         </div>
     </div>
     <div class="row bg-light p-5">
-        <div class="col">
-            <h4 class="font2 text-center">Federación nacional de comerciantes</h4>
-            <div class="d-flex justify-content-around align-items-center flex-wrap">
-                <img src="{{ asset('img/fenalco.png')  }}" height="200" alt="fenalco">
-                <img src="{{ asset('img/finsa.jpg')  }}" height="160" alt="finsa">
-                <img src="{{ asset('img/remanso.jpg')  }}" height="200" alt="remanso">
-                <img src="{{ asset('img/sena.png')  }}" height="150" alt="sena">
+        <h1 class="font2 text-center mt-5 ">Federación nacional de comerciantes</h1>
+        <div class="col-3 mt-5">
+            <div class="card">
+                <div class="card-header text-center">
+                    Fenalco
+                </div>
+                <img src="{{ asset('img/fenalco.png')  }}" class="img-thumbnail" alt="fenalco">
+            </div>
+        </div>
+        <div class="col-3 mt-5">
+            <div class="card">
+                <div class="card-header text-center">
+                    Finsa
+                </div>
+                <img src="{{ asset('img/finsa.jpg')  }}" class="img-thumbnail" alt="fenalco">
+            </div>
+        </div>
+        <div class="col-3 mt-5">
+            <div class="card">
+                <div class="card-header text-center">
+                    Remanso
+                </div>
+                <img src="{{ asset('img/remanso.jpg')  }}" class="img-thumbnail" alt="fenalco">
+            </div>
+        </div>
+        <div class="col-3 mt-5">
+            <div class="card">
+                <div class="card-header text-center">
+                    Sena
+                </div>
+                <img src="{{ asset('img/sena.png')  }}" class="img-thumbnail" alt="sena">
             </div>
         </div>
     </div>
     <div class="row bg-light justify-content-center">
-        <h1 class="font2 text-center mb-5 mt-4">Conoce nuestras formas de pago</h1>
+        <h3 class="font2 text-center mb-5 mt-5">Conoce nuestras formas de pago</h3>
         <div class="col-md-10">
-            <div class="swiper mt-3">
+            <div class="swiper mt-3 mb-5">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
                     <!-- Slides -->

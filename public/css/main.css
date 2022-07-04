@@ -3,16 +3,17 @@ body{
     background-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 1000'%3E%3Cg %3E%3Ccircle fill='%23ADBBC4' cx='50' cy='0' r='50'/%3E%3Cg fill='%23b2bfc7' %3E%3Ccircle cx='0' cy='50' r='50'/%3E%3Ccircle cx='100' cy='50' r='50'/%3E%3C/g%3E%3Ccircle fill='%23b7c3cb' cx='50' cy='100' r='50'/%3E%3Cg fill='%23bcc7ce' %3E%3Ccircle cx='0' cy='150' r='50'/%3E%3Ccircle cx='100' cy='150' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c0cad1' cx='50' cy='200' r='50'/%3E%3Cg fill='%23c5ced4' %3E%3Ccircle cx='0' cy='250' r='50'/%3E%3Ccircle cx='100' cy='250' r='50'/%3E%3C/g%3E%3Ccircle fill='%23c9d2d7' cx='50' cy='300' r='50'/%3E%3Cg fill='%23cdd5da' %3E%3Ccircle cx='0' cy='350' r='50'/%3E%3Ccircle cx='100' cy='350' r='50'/%3E%3C/g%3E%3Ccircle fill='%23d2d9dd' cx='50' cy='400' r='50'/%3E%3Cg fill='%23d6dce0' %3E%3Ccircle cx='0' cy='450' r='50'/%3E%3Ccircle cx='100' cy='450' r='50'/%3E%3C/g%3E%3Ccircle fill='%23dae0e3' cx='50' cy='500' r='50'/%3E%3Cg fill='%23dee3e6' %3E%3Ccircle cx='0' cy='550' r='50'/%3E%3Ccircle cx='100' cy='550' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e2e6e9' cx='50' cy='600' r='50'/%3E%3Cg fill='%23e6e9ec' %3E%3Ccircle cx='0' cy='650' r='50'/%3E%3Ccircle cx='100' cy='650' r='50'/%3E%3C/g%3E%3Ccircle fill='%23e9edef' cx='50' cy='700' r='50'/%3E%3Cg fill='%23edf0f2' %3E%3Ccircle cx='0' cy='750' r='50'/%3E%3Ccircle cx='100' cy='750' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f1f3f4' cx='50' cy='800' r='50'/%3E%3Cg fill='%23f4f6f7' %3E%3Ccircle cx='0' cy='850' r='50'/%3E%3Ccircle cx='100' cy='850' r='50'/%3E%3C/g%3E%3Ccircle fill='%23f8f9fa' cx='50' cy='900' r='50'/%3E%3Cg fill='%23fcfcfc' %3E%3Ccircle cx='0' cy='950' r='50'/%3E%3Ccircle cx='100' cy='950' r='50'/%3E%3C/g%3E%3Ccircle fill='%23FFFFFF' cx='50' cy='1000' r='50'/%3E%3C/g%3E%3C/svg%3E");
     background-attachment: fixed;
     background-size: contain;
+    font-family: 'Courier Prime', cursive;
 }
 .font{
-    font-family: 'Lobster', cursive;
-    text-decoration: underline dotted rgba(148,233,153,1) 15px;
+    font-family: 'Courier Prime', cursive;
+    text-decoration: underline dotted #27B7E8 6px;
     font-size: 4rem;
 }
 
 .font2{
-    font-family: 'Lobster', cursive;
-    text-decoration: underline dotted rgba(148,233,153,1)  10px;
+    font-family: 'Courier Prime', cursive;
+    text-decoration: underline dotted #27B7E8 10px;
 }
 
 .font3{
@@ -23,6 +24,7 @@ body{
     background-color:rgba(0, 0, 0, 0.5);
 }
 .carousel-item {
+    font-family: 'Lobster', cursive;
     height: 65vh;
     min-height: 300px;
     background: no-repeat center center scroll;

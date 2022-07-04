@@ -17,6 +17,8 @@ Route::get('/', function () {
 
 Route::view('/zafiro.zafiro', 'zafiro.zafiro')->name('zafiro');
 
+Route::view('/planes.planes', 'planes.planes')->name('planes');
+
 Route::view('/obituario.obituario', 'obituario.obituario')->name('obituario');
 
 //Route::view('/login', 'login')->name('login');

@@ -7,7 +7,7 @@ body{
 }
 .font{
     font-family: 'Courier Prime', cursive;
-    text-decoration: underline dotted #27B7E8 6px;
+    text-decoration: underline dotted #27B7E8 10px;
     font-size: 4rem;
 }
 

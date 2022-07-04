@@ -69,7 +69,8 @@ Route::resource('/users',UserController::class)
 
 Route::get('/obituariesClient',function(){
     return view('obituario.obituario')->with([
-        'obituaries', Obituaries::all()
+        'obituaries' => Obituaries::all(),
+        'headquarters' => Headquarters::all(),
     ]);
 })->name('obituaries.client');
 

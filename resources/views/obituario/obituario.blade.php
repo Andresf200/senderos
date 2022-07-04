@@ -19,5 +19,15 @@
             </form>
         </div>
     </div>
+    <div class="row">
+        <div class="col-3 mt-5">
+            <div class="card">
+                <div class="card-header text-center">
+                    Finsa
+                </div>
+                <img src="{{ asset('img/finsa.jpg')  }}" class="img-thumbnail" alt="fenalco">
+            </div>
+        </div>
+    </div>
 </div>
 @endsection

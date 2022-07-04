@@ -86,9 +86,9 @@
             </div>
         </div>
         <div class="col-4 mt-5">
-            <div class="card w-100" style="width: 18rem;">
+            <div class="card">
                 <div class="card-header">
-                    Plan Acuavalle
+                    <h5 class="font2 text-center">Plan Acuavalle</h5>
                 </div>
                 <img src="{{asset('img/Acuavalle.jpg')}}" class="img-thumbnail" alt="...">
                 <div class="card-body">
@@ -102,7 +102,7 @@
         <div class="col-4 mt-5">
             <div class="card">
                 <div class="card-header">
-                    Plan bono canasta
+                    <h5 class="font2 text-center">Plan bono canasta</h5>
                 </div>
                 <img src="{{asset('img/bonocanasta.jpg')}}" class="img-thumbnail" alt="...">
                 <div class="card-body">
@@ -115,7 +115,7 @@
         <div class="col-4 mt-5">
             <div class="card">
                 <div class="card-header">
-                    Plan ERT
+                    <h5 class="font2 text-center">Plan ERT</h5>
                 </div>
                 <img src="{{asset('img/Ert.jpg')}}" class="img-thumbnail" alt="...">
                 <div class="card-body">
@@ -129,7 +129,7 @@
         <div class="col-4 mt-5">
             <div class="card">
                 <div class="card-header">
-                    Plan integral
+                    <h5 class="font2 text-center">Plan integral</h5>
                 </div>
                 <img src="{{asset('img/integral.jpg')}}" class="img-thumbnail" alt="...">
                 <div class="card-body">
@@ -143,7 +143,7 @@
         <div class="col-4 mt-5">
             <div class="card w-100">
                 <div class="card-header">
-                    Plan mascota
+                    <h5 class="font2 text-center">Plan mascota</h5>
                 </div>
                 <img src="{{asset('img/mascotas.jpg')}}" class="img-thumbnail" alt="...">
                 <div class="card-body">
@@ -157,7 +157,7 @@
         <div class="col-4 mt-5">
             <div class="card">
                 <div class="card-header">
-                    Repatriación
+                    <h5 class="font2 text-center">Repatriación</h5>
                 </div>
                 <img
                     src="{{asset('img/vista-superior-aviones-sobre-fondo-azul_23-2148580909.webp')}}"

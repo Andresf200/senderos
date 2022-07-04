@@ -36,10 +36,16 @@
                         <a class="nav-link" href="{{ route('zafiro') }}">Zafiro</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="{{ route('obituario') }}">Obituario</a>
+                        <a class="nav-link" href="{{ route('obituaries.client') }}">Obituario</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="{{ route('headquarters') }}">Nuestras sedes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('planes') }}">Planes</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="{{ route('exequiales') }}">Exequiales</a>
                     </li>
                 </ul>
                 <form class="d-flex" role="search">

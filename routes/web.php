@@ -19,6 +19,8 @@ Route::view('/zafiro.zafiro', 'zafiro.zafiro')->name('zafiro');
 
 Route::view('/planes.planes', 'planes.planes')->name('planes');
 
+Route::view('/exequiales.exequiales', 'exequiales.exequiales')->name('exequiales');
+
 Route::view('/obituario.obituario', 'obituario.obituario')->name('obituario');
 
 //Route::view('/login', 'login')->name('login');
@@ -66,10 +68,9 @@ Route::resource('/users',UserController::class)
     ->only(['index','create','store,','edit','update','destroy']);
 
 Route::get('/obituariesClient',function(){
-    return view('dashboard.obituaries.index')
-    ->with([
+    return view('obituario.obituario')->with([
         'obituaries', Obituaries::all()
-        ]);
+    ]);
 })->name('obituaries.client');
 
 //Route::view('/dashboard.obituaries.create', 'dashboard.obituaries.create')->name('obituaries.create');

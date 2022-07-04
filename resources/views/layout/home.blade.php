@@ -60,18 +60,20 @@
     @yield('content')
 </div>
 
-<footer class="d-flex flex-wrap justify-content-between align-items-center py-3 my-4 border-top">
-    <div class="col-md-4 d-flex align-items-center">
+<footer class="d-flex flex-wrap justify-content-between align-items-center mt-5 py-3 my-4 border-top bg-light">
+    <div class="col-md-6 d-flex align-items-center">
         <a href="/" class="mb-3 me-2 mb-md-0 text-muted text-decoration-none lh-1">
             <svg class="bi" width="30" height="24"><use xlink:href="#bootstrap"/></svg>
         </a>
-        <span class="text-muted">&copy; 2021 Company, Inc</span>
+        <span class="text-muted">&copy;2021 Company</span>
+        <br>
+        <span class="text-muted">Dirección: Calle 12 No. 2-19 Cartago, Valle del Cauca, Colombia</span>
     </div>
 
-    <ul class="nav col-md-4 justify-content-end list-unstyled d-flex">
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#twitter"/></svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#instagram"/></svg></a></li>
-        <li class="ms-3"><a class="text-muted" href="#"><svg class="bi" width="24" height="24"><use xlink:href="#facebook"/></svg></a></li>
+    <ul class="nav col-md-6 justify-content-start align-items-center d-flex">
+        <span class="text-muted"> Números de contacto: (2) 214 8567 – (2) 213 8567 – 3216440139</span>
+        <span class="text-muted"> Email: comercial@senderosdepaz.com – servicioalcliente@sendrosdepaz.com</span>
+        <span class="text-muted"> Elaborado Por: ctrljean y Andresf200</span>
     </ul>
 </footer>
 

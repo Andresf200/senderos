@@ -7,7 +7,7 @@
 @section('content')
 <div class="container mt-5">
     <div class="row justify-content-center">
-        <div class="col-6 p-5 bg-light">
+        <div class="col-6  p-5 bg-light">
             <h1 class="font text-center">Obituarios</h1>
             <p class="mt-5">En esta sección encontrará los datos de los servicios funerarios que se encuentran actualmente en velación en las diferentes sedes de la Red de Senderos de Paz. Puede realizar un filtro por la ciudad de su búsqueda en la siguiente casilla:</p>
             <form>
@@ -22,7 +22,7 @@
     <div class="row">
         @foreach($obituaries as $obituarie)
         <div class="col-3 mt-5">
-            <div class="card">
+            <div class="card shadow-lg">
                 <div class="card-header">
                     <strong>Nombre:</strong>{{ $obituarie->name_deceased }}
                 </div>

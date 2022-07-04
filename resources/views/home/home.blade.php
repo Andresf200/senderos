@@ -59,7 +59,7 @@
                             allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                             allowfullscreen></iframe>
                 </div>
-                <div class="card-body ">
+                <div class="card-body">
                     <h3 class="text-center">Siguenos en redes sociales</h3>
                     <div class="d-flex justify-content-around align-items-center mt-5">
                         <a href="https://www.facebook.com/senderosdepazoficial/" target="_blank">

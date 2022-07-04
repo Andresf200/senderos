@@ -15,7 +15,7 @@
 <div class="container pb-5 bg-light">
     <div class="row">
         <div class="col-sm-12 col-md-6">
-            <table class="table table-responsive">
+            <table class="table shadow-lg table-responsive">
                 <thead class="table" style="background-color: #00bcd4">
                 <tr>
                     <th scope="col">#</th>
@@ -88,8 +88,10 @@
                 </tbody>
             </table>
         </div>
-        <div class="col-sm-12 col-md-6" style="background-color: #00bcd4">
-            <img src="{{ asset('img/mapas.png') }}" class="img-fluid" alt="">
+        <div class="col-sm-12 col-md-6 shadow-lg" style="background-color: #00bcd4">
+            <div class="d-flex justify-content-center align-items-center">
+                <img src="{{ asset('img/mapas.png') }}" class="img-fluid" alt="">
+            </div>
         </div>
     </div>
 </div>

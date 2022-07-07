@@ -39,8 +39,12 @@
                                 <td>{{ $obituary->cemetery }}</td>
                                 <td>{{ $obituary->municipality_id }}</td>
                                 <td>
-                                    <a class="" href="{{ route('obituaries.edit', $obituary->id) }}">Editar</a>
-                                    <a class="" href="{{ route('obituaries.destroy', $obituary->id) }}">Eliminar</a>
+                                    <a class="d-inline" href="{{ route('obituaries.edit', $obituary->id) }}">Editar</a>
+                                    <form method="POST" class="d-inline" action="{{ route('obituaries.destroy', ['obituary' => $obituary->id]) }}">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-link">Delete</button>
+                                    </form>
                                 </td>
                             </tr>
                         @endforeach

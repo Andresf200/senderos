@@ -22,8 +22,8 @@ return new class extends Migration
             $table->string('church',250)->nullable();
             $table->time('hour')->nullable();
             $table->string('cemetery')->nullable();
-            $table->unsignedBigInteger('municipality_id');
             $table->timestamps();
+            $table->unsignedBigInteger('municipality_id');
             $table->foreign('municipality_id')->references('id')->on('headquarters');
         });
     }

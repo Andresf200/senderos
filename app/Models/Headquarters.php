@@ -21,7 +21,7 @@ class Headquarters extends Model
 
     public function obituaries(): HasMany
     {
-        return $this->hasMany(obituaries::class, 'id');
+        return $this->HasMany(Obituaries::class, 'municipality_id');
     }
 
 }

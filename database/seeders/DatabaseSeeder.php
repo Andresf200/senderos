@@ -17,7 +17,7 @@ class DatabaseSeeder extends Seeder
         \App\Models\Headquarters::factory(1)->create();
         \App\Models\Headquarters::factory(1)->create(['municipality' => 'cartago']);
         \App\Models\User::factory(10)->create();
-        \App\Models\CarrouselImage::factory(10)->create();
+//        \App\Models\CarrouselImage::factory(10)->create();
         \App\Models\Obituaries::factory(10)->create();
 
         \App\Models\User::factory()->create([

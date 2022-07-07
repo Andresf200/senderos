@@ -27,6 +27,7 @@ class Obituaries extends Model
 
     public function headquarter(): BelongsTo
     {
-        return $this->belongsTo(Headquarters::class, 'customer_id');
+        return $this->BelongsTo(Headquarters::class, 'id');
     }
+
 }

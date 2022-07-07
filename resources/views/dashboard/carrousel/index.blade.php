@@ -17,7 +17,7 @@
                         <thead class="table" style="background-color: #00bcd4">
                         <tr>
                             <th scope="col">Nombre</th>
-                            <th scope="col">Ruta</th>
+                            <th scope="col">Imagen</th>
                             <th scope="col">Fecha de creación</th>
                             <th scope="col">Acciones</th>
                         </tr>
@@ -26,11 +26,17 @@
                         @foreach($carrouselImages as $carrousel)
                             <tr>
                                 <th scope="row">{{ $carrousel->name }}</th>
-                                <td>{{ $carrousel->path }}</td>
+                                <td><img
+                                         src="{{ asset($carrousel->path) }}"
+                                         class="d-block w-100" alt="...">
+                                </td>
                                 <td>{{ $carrousel->created_at }}</td>
                                 <td>
-                                    <a class="" href="">Editar</a>
-                                    <a class="" href="">Eliminar</a>
+                                    <form method="POST" class="d-inline" action="{{ route('carrousel.destroy', ['carrousel' => $carrousel->id]) }}">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-link">Delete</button>
+                                    </form>
                                 </td>
                             </tr>
                         @endforeach

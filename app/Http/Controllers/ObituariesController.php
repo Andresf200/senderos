@@ -60,8 +60,9 @@ class ObituariesController extends Controller
             ->withSuccess("El obituario con id {$obituary->id} fue editado");
     }
 
-    public function destroy(Obituaries $obituarie)
+    public function destroy($obituarie)
     {
+        $obituarie = Obituaries::findOrFail($obituarie);
         $obituarie->delete();
 
         return redirect()

@@ -37,7 +37,11 @@
                                 <td>{{ $user->municipality_id }}</td>
                                 <td>
                                     <a class="" href="{{ route('users.edit', $user->id) }}">Editar</a>
-                                    <a class="" href="{{ route('users.destroy', $user->id) }}">Eliminar</a>
+                                    <form method="POST" class="d-inline" action="{{ route('users.destroy', ['user' => $user->id]) }}">
+                                        @csrf
+                                        @method('DELETE')
+                                        <button type="submit" class="btn btn-link">Delete</button>
+                                    </form>
                                 </td>
                             </tr>
                         @endforeach

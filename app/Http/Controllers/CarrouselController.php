@@ -32,23 +32,29 @@ class CarrouselController extends Controller
 
     public function store(CarrouselRequest $request)
     {
-            if($request->hasFile('carrouselImage')){
-                $file = $request->file('carrouselImage');
-                $destinationPath = 'img/carrousel/';
-                $fileName = time().'-'.$file->getClientOriginalName();
-                $uploadSuccess = $request->file('carrouselImage')->move(public_path($destinationPath), $fileName);
-                CarrouselImage::create([
-                   'name' => $fileName,
-                   'path' => $destinationPath.$fileName
-                ]);
-            }
-        return view('dashboard.carrousel.create')->with(['status', "la imagen fue subida con exito"]);
+        if ($request->hasFile('carrouselImage')) {
+            $file = $request->file('carrouselImage');
+            $destinationPath = 'img/carrousel/';
+            $fileName = time() . '-' . $file->getClientOriginalName();
+            $request->file('carrouselImage')->move(public_path($destinationPath), $fileName);
+            CarrouselImage::create([
+                'name' => $fileName,
+                'path' => $destinationPath . '/' . $fileName
+            ]);
+        }
+        return redirect()
+            ->route('carrousel.index')
+            ->withSuccess("La imagen con nombre {$fileName} fue creada");
     }
 
-    public function destroy(CarrouselImage $carrousel): Factory|View|Application
+    public function destroy(CarrouselImage $carrousel)
     {
-            File::delete(public_path($carrousel->path));
-            $carrousel->delete();
-        return view('dashboard.carrousel.create')->with(['status', "la imagen fue eliminada con exito"]);
+
+        File::delete(public_path($carrousel->path));
+        $carrousel->delete();
+
+        return redirect()
+            ->route('carrousel.index')
+            ->withSuccess("La imagen con nombre {$carrousel->name} fue eliminada");
     }
 }

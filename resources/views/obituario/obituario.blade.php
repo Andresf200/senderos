@@ -12,7 +12,10 @@
                 <p class="mt-5">En esta sección encontrará los datos de los servicios funerarios que se encuentran
                     actualmente en velación en las diferentes sedes de la Red de Senderos de Paz. Puede realizar un
                     filtro por la ciudad de su búsqueda en la siguiente casilla:</p>
-                <form method="POST" action="">
+                @if(!empty($cami))
+                    @dd($obituaries)
+                    @endif
+                <form method="POST" action="{{ route('obituaries.headquarters.client')}} ">
                     @csrf
                     <div class="d-flex justify-content center align-items-center">
                         <select class="form-select" name="municipality_id">

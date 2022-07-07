@@ -5,6 +5,7 @@ use App\Http\Controllers\CarrouselController;
 use App\Http\Controllers\ObituariesController;
 use App\Http\Controllers\UserController;
 use App\Mail\ContactanosMailable;
+use App\Models\CarrouselImage;
 use App\Models\Headquarters;
 use App\Models\Obituaries;
 use Illuminate\Http\Request;
@@ -12,7 +13,9 @@ use Illuminate\Support\Facades\Mail;
 use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
-    return view('home/home');
+    return view('home/home')->with([
+        'carrousel' => CarrouselImage::all(),
+    ]);
 })->name('home');
 
 Route::view('/zafiro.zafiro', 'zafiro.zafiro')->name('zafiro');
@@ -74,10 +77,17 @@ Route::get('/obituariesClient',function(){
     ]);
 })->name('obituaries.client');
 
-//Route::view('/dashboard.obituaries.create', 'dashboard.obituaries.create')->name('obituaries.create');
-//Route::view('/dashboard.obituaries.edit', 'dashboard.obituaries.edit')->name('obituaries.edit');
+
+Route::post('/obituariesHeadquartersClient',function(Request $request){
+    $headquarter = Headquarters::findOrFail($request->input('municipality_id'));
+    return view('obituario.obituario')->with([
+        'obituaries' => $headquarter->obituaries,
+        'headquarters' => Headquarters::all(),
+    ]);
+})->name('obituaries.headquarters.client');
 
 Route::post('contactanos',function(Request $request){
+    dd(1);
     $request->validate([
        'name' => ['string','required'],
        'phone' => ['string','required'],

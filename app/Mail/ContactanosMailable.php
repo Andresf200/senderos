@@ -12,9 +12,11 @@ class ContactanosMailable extends Mailable
     use Queueable, SerializesModels;
 
     public $subject = "Informacion de contacto";
-    public function __construct()
+    public $contacto;
+
+    public function __construct($contacto)
     {
-        //nombre numero correo mensaje
+        $this->contacto = $contacto;
     }
 
     /**

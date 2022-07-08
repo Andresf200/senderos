@@ -12,7 +12,7 @@
                     <div class="carousel-inner">
                         <div class="carousel-item active">
                             <img class="card-img-top"
-                                 src="{{ asset('img/tarjeta.png') }}"
+                                 src="{{ asset('img/tarjetablanca.png') }}"
                                  class="d-block w-100" alt="...">
                         </div>
                     </div>

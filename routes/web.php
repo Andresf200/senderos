@@ -86,8 +86,7 @@ Route::post('/obituariesHeadquartersClient',function(Request $request){
     ]);
 })->name('obituaries.headquarters.client');
 
-Route::post('contactanos',function(Request $request){
-    dd(1);
+Route::post('/contactanos',function(Request $request){
     $request->validate([
        'name' => ['string','required'],
        'phone' => ['string','required'],
@@ -95,10 +94,8 @@ Route::post('contactanos',function(Request $request){
        'message' => ['string','required'],
     ]);
 
-    $instanceContactMailable = new ContactanosMailable($request->all());
-   Mail::to('afloriangonzales@gmail.com')->send($instanceContactMailable);
-
+    Mail::to('paginasenderosdepaz@gmail.com')->send(new ContactanosMailable($request->all()));
     return redirect()
         ->back()
         ->withSuccess("se ha enviado el contacto");
-});
+})->name('contactanos');

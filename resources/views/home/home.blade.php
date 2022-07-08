@@ -79,23 +79,24 @@
                  style="background-color: #cdd5da">
                 <div class="card shadow-lg" style="height: 600px">
                     <div class="card-body">
-                        <form>
+                        <form method="POST" action="{{ route('contactanos') }}">
+                            @csrf
                             <h3 class="text-center">Contactanos</h3>
                             <div class="mb-3">
                                 <label class="form-label">Nombre completo</label>
-                                <input type="text" class="form-control" placeholder="Nombre completo">
+                                <input type="text" class="form-control" name="name" placeholder="Nombre completo">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Teléfono</label>
-                                <input type="text" class="form-control" placeholder="Número teléfonico">
+                                <input type="number" class="form-control" name="phone" placeholder="Número teléfonico">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Correo</label>
-                                <input type="text" class="form-control" placeholder="Correo eléctronico">
+                                <input type="email" class="form-control" name="email" placeholder="Correo eléctronico">
                             </div>
                             <div class="mb-3">
                                 <label class="form-label">Mensaje</label>
-                                <textarea class="form-control" placeholder="Mensaje"></textarea>
+                                <textarea class="form-control"  name="message" placeholder="Mensaje"></textarea>
                             </div>
                             <div class="form-check">
                                 <input class="form-check-input" type="checkbox" value="" id="flexCheckDefault">

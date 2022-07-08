@@ -158,43 +158,22 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <h3 class="font2 text-center mb-5 mt-5">Conoce nuestras formas de pago</h3>
-            <div class="col-md-10">
-                <div class="swiper mt-3 mb-5">
-                    <!-- Additional required wrapper -->
-                    <div class="swiper-wrapper">
-                        <!-- Slides -->
-                        <div class="swiper-slide p-5 d-flex justify-content-center align-items-center">
-                            <img src="{{asset('img/Acuavalle-Logo.png')}}" height="100" class="img-responsive"
-                                 alt="logo_acuavalle">
+            <h3 class="font2 text-center mb-5 mt-5">Conoce nuestra aplicacion movil</h3>
+            <div class="col-md-10 row justify-content-center">
+                <div class="card mb-3" style="max-width: 800px">
+                    <div class="row g-0">
+                        <div class="col-md-4">
+                            <img src="{{ asset('img/appmovil.jpg')  }}" class="img-fluid rounded-start" alt="...">
                         </div>
-                        <div class="swiper-slide pt-5 pb-5 d-flex justify-content-center align-items-center">
-                            <img src="{{asset('img/logo-bancolombia.png')}}" height="100" class="img-responsive"
-                                 alt="logo_bancolombia">
-                        </div>
-                        <div class="swiper-slide pt-5 pb-5 d-flex justify-content-center align-items-center">
-                            <img src="{{asset('img/moto.png')}}" height="120" class="img-responsive"
-                                 alt="logo_servicio_cobranza">
-                        </div>
-                        <div class="swiper-slide pt-5 pb-5 d-flex justify-content-center align-items-center">
-                            <img src="{{asset('img/ert.png')}}" height="100" class="img-responsive" alt="logo_ert">
-                        </div>
-                        <div class="swiper-slide pt-5 pb-5 d-flex justify-content-center align-items-center">
-                            <img src="{{asset('img/baloto.png')}}" height="100" class="img-responsive"
-                                 alt="logo_baloto">
-                        </div>
-                        <div class="swiper-slide pt-5 pb-5 d-flex justify-content-center align-items-center">
-                            <img src="{{asset('img/logoubicacion2.png')}}" height="150" class="img-responsive"
-                                 alt="logo_ubicación">
+                        <div class="col-md-8">
+                            <div class="card-body">
+                                <h5 class="card-title">Senderos De Paz</h5>
+                                <p class="card-text">App Que Permite A Los Afiliados Tener Información De Sus Productos Y Servicios Como También La Posibilidad De Realizar
+                                    Sus Pagos De Cuotas Exequiales En Línea De Forma Segura, Rápida Y Simple</p>
+                                <a href="https://play.google.com/store/apps/details?id=com.bssolutions.senderosdepaz&amp;hl=es_CO&amp;gl=US" class="btn btn-primary">Descargala</a>
+                            </div>
                         </div>
                     </div>
-                    <!-- If we need pagination -->
-                    <div class="swiper-pagination"></div>
-
-                    <!-- If we need navigation buttons -->
-
-                    <!-- If we need scrollbar -->
-                    <div class="swiper-scrollbar"></div>
                 </div>
             </div>
         </div>

@@ -5,12 +5,12 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <link rel="icon" href="{{asset('img/logo.svg')}}">
+    <link rel="icon" href="{{ asset('img/logo.svg')}}">
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
           integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Courier+Prime&family=Lobster&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="{{ asset('css/main.css') }}">
-    <title>@yield('title')</title>
+    <title>Senderos de paz</title>
 </head>
 <body>
 @section('navbar')
@@ -24,15 +24,21 @@
             </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    @if (auth()->user()->isAdmin())
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="{{ route('carrousel.index') }}">Carrousel</a>
+                        </li>
+                    @endif
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('carrousel.index') }}">Carrousel</a>
+                        <a class="nav-link active" aria-current="page"
+                           href="{{ route('obituaries.index') }}">Obituarios</a>
                     </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('obituaries.index') }}">Obituarios</a>
-                    </li>
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="{{ route('users.index') }}">Usuarios</a>
-                    </li>
+                    @if (optional(auth()->user())->isAdmin())
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page"
+                               href="{{ route('users.index') }}">Usuarios</a>
+                        </li>
+                    @endif
                 </ul>
                 <form method="POST" class="d-flex" role="search" action="{{ route('logout') }}">
                     @csrf

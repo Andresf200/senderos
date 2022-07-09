@@ -5,12 +5,13 @@
 @section('home')@endsection
 
 @section('content')
-    <div class="container mt-5">
-        <div class="row">
+    <div class="container mt-5 ">
+        <div class="row text-center" >
             <div class="col">
                 <img class=" img-fluid"
                      src="{{ asset('img/zafiro.png') }}"
-                     alt="...">
+                     alt="..."
+                    style="max-width: 500px">
             </div>
         </div>
         <div class="row bg-light justify-content-center">

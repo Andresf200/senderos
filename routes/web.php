@@ -26,49 +26,9 @@ Route::view('/pagos.pagos', 'pagos.pagos')->name('pagos');
 
 Route::view('/obituario.obituario', 'obituario.obituario')->name('obituario');
 
-//Route::view('/login', 'login')->name('login');
-
 Route::view('/headquarters.headquarters', 'headquarters.headquarters')->name('headquarters');
 
-Route::get('/dashboard',fn() => view('dashboard.dashboard'))->name('dashboard')
-    ->middleware('auth');
-
-//todo no existen la vistas
-Route::get('/repatriation',fn() => view('repatriation'))->name('repatriation');
-
-Route::get('/card-zafiro',fn() => view('card-zafiro'))->name('card.zafiro');
-
-Route::get('/plan-pet',fn() => view('plan-pet'))->name('plan.pet');
-
-Route::get('/our-locations',fn() => view('our-locations'))->name('our.locations');
-//todo end
-
 Route::get('/login',fn() => view('login'))->name('login')   ;
-
-Route::post('/login',[AuthController::class,'login'])->name('login');
-Route::post('/logout',[AuthController::class,'logout'])->name('logout');
-
-
-Route::resource('/carrousel',CarrouselController::class)
-    ->names('carrousel')
-    ->only(['index','create','store','destroy']);
-
-
-Route::resource('/obituaries',ObituariesController::class)
-    ->names('obituaries')
-    ->only(['index','create','store','edit','update','destroy']);
-
-Route::get('/register',function(){
-    return view('dashboard.register')->with([
-    'headquarters' => Headquarters::all(),
-    ]);
-})->name('register');
-
-Route::post('/register',[UserController::class,'register'])->name('register');
-
-Route::resource('/users',UserController::class)
-    ->names('users')
-    ->only(['index','create','store,','edit','update','destroy']);
 
 Route::get('/obituariesClient',function(){
     return view('obituario.obituario')->with([
@@ -76,7 +36,6 @@ Route::get('/obituariesClient',function(){
         'headquarters' => Headquarters::all(),
     ]);
 })->name('obituaries.client');
-
 
 Route::post('/obituariesHeadquartersClient',function(Request $request){
     $headquarter = Headquarters::findOrFail($request->input('municipality_id'));
@@ -88,10 +47,10 @@ Route::post('/obituariesHeadquartersClient',function(Request $request){
 
 Route::post('/contactanos',function(Request $request){
     $request->validate([
-       'name' => ['string','required'],
-       'phone' => ['string','required'],
-       'email' => ['email','required'],
-       'message' => ['string','required'],
+        'name' => ['string','required'],
+        'phone' => ['string','required'],
+        'email' => ['email','required'],
+        'message' => ['string','required'],
     ]);
 
     Mail::to('paginasenderosdepaz@gmail.com')->send(new ContactanosMailable($request->all()));
@@ -99,3 +58,33 @@ Route::post('/contactanos',function(Request $request){
         ->back()
         ->withSuccess("se ha enviado el contacto");
 })->name('contactanos');
+
+
+//vistas auth
+
+Route::get('/dashboard',fn() => view('dashboard.dashboard'))->name('dashboard')
+    ->middleware('auth');
+
+Route::post('/login',[AuthController::class,'login'])->name('login');
+
+Route::post('/logout',[AuthController::class,'logout'])->name('logout')->middleware('auth');
+
+Route::resource('/carrousel',CarrouselController::class)
+    ->names('carrousel')
+    ->only(['index','create','store','destroy'])->middleware(['auth','is.admin']);
+
+Route::resource('/obituaries',ObituariesController::class)
+    ->names('obituaries')
+    ->only(['index','create','store','edit','update','destroy'])->middleware('auth');
+
+Route::get('/register',function(){
+    return view('dashboard.register')->with([
+    'headquarters' => Headquarters::all(),
+    ]);
+})->name('register')->middleware(['auth','is.admin']);
+
+Route::post('/register',[UserController::class,'register'])->name('register')->middleware(['auth','is.admin']);
+
+Route::resource('/users',UserController::class)
+    ->names('users')
+    ->only(['index','create','store,','edit','update','destroy'])->middleware(['auth','is.admin']);

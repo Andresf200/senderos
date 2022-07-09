@@ -12,6 +12,25 @@
 </head>
 <body>
 <div class="contenedor">
+    <main class="py-4">
+        <div class="container-fluid">
+            @if (session()->has('success'))
+                <div class="alert alert-success">
+                    {{ session()->get('success') }}
+                </div>
+            @endif
+
+            @if (isset($errors) && $errors->any())
+                <div class="alert alert-danger">
+                    <ul>
+                        @foreach ($errors->all() as $error)
+                            <li>{{ $error }}</li>
+                        @endforeach
+                    </ul>
+                </div>
+            @endif
+        </div>
+    </main>
     <form class="contenedor_login" method="POST" action="{{ route('login') }}">
         @csrf
         <img src="{{asset( 'img/logo2.png' )}}" height="100px" alt="Imagen del logo" class="imagen">

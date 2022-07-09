@@ -22,7 +22,7 @@ return new class extends Migration
             $table->string('phone');
             $table->string('address');
             $table->unsignedBigInteger('municipality_id');
-            $table->string('admin')->default(User::USUARIO_REGULAR);
+            $table->boolean('admin')->default(User::USUARIO_REGULAR);
             $table->string('email');
             $table->string('password');
             $table->rememberToken();

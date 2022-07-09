@@ -15,8 +15,8 @@ class User extends Authenticatable
 {
     use HasApiTokens, HasFactory, Notifiable, SoftDeletes;
 
-    const USUARIO_ADMINISTRADOR = 'true';
-    const USUARIO_REGULAR = 'false';
+    const USUARIO_ADMINISTRADOR = true;
+    const USUARIO_REGULAR = false;
 
     protected $fillable = [
         'name',
@@ -36,9 +36,13 @@ class User extends Authenticatable
     ];
 
 
-    public function isAdmin()
+    public function isAdmin(): bool
     {
-        return $this->admin == User::USUARIO_ADMINISTRADOR;
+        if($this->admin == User::USUARIO_ADMINISTRADOR)
+        {
+            return User::USUARIO_ADMINISTRADOR;
+        }
+        return User::USUARIO_REGULAR;
     }
 
     public function headquarter(): BelongsTo

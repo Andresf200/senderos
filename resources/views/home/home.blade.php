@@ -1,6 +1,6 @@
 @extends('layout.home')
 
-@section('title', 'home')
+@section('title', 'Senderos de paz')
 
 @section('home')@endsection
 
@@ -114,7 +114,7 @@
                 <a href="{{ route('pagos') }}">
                     <img src="{{ asset('img/pago.png') }}" class="p-1" width="auto" height="100" alt="">
                 </a>
-                <a href="">
+                <a href="https://www.pagosvirtualesavvillas.com.co/personal/pagos/13328">
                     <img src="{{ asset('img/pse.png') }}" class="p-1" width="auto" height="110" alt="">
                 </a>
                 <a href="{{ route('planes') }}">

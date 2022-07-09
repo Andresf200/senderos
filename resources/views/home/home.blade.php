@@ -160,7 +160,7 @@
         <div class="row justify-content-center">
             <h3 class="font2 text-center mb-5 mt-5">Conoce nuestra aplicación movil</h3>
             <div class="col-md-10 mb-5 row justify-content-center">
-                <div class="card mb-5" style="max-width: 800px">
+                <div class="card mb-5 shadow-lg" style="max-width: 800px">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="{{ asset('img/appmovil.jpg')  }}" class="img-fluid rounded-start" alt="...">

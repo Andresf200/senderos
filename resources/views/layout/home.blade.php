@@ -79,7 +79,7 @@
         @endif
     </div>
 
-<div class="container">
+<div class="@yield('container')">
     @yield('content')
 </div>
 
@@ -92,19 +92,19 @@
         <br>
         <span class="text-muted">Dirección: Calle 12 No. 2-19 Cartago, Valle del Cauca, Colombia</span>
     </div>
-
-    <ul class="nav col-md-6 justify-content-start align-items-center d-flex">
-        <span class="text-muted"> Números de contacto: (2) 214 8567 – (2) 213 8567 – 3216440139</span>
-        <span class="text-muted"> Email: comercial@senderosdepaz.com – servicioalcliente@sendrosdepaz.com</span>
-        <span class="text-muted"> Elaborado Por: ctrljean y Andresf200</span>
-    </ul>
+    <div class="nav col-sm-12 col-md-6 justify-content-start align-items-center d-flex mt-3">
+        <ul>
+            <span class="text-muted"> Números de contacto: (2) 214 8567 – (2) 213 8567 – 3216440139</span>
+            <span class="text-muted"> Email: comercial@senderosdepaz.com – servicioalcliente@sendrosdepaz.com</span>
+        </ul>
+    </div>
 </footer>
 
 <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
 <script>
     const swiper = new Swiper('.swiper', {
         speed: 400,
-        spaceBetween: 50,
+        spaceBetween: 250,
         autoplay: {
             delay: 2000
         },

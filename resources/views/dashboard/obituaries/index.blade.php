@@ -12,8 +12,8 @@
                     Listado de obituarios
                     <a class="btn btn-success" href="{{ route('obituaries.create') }}">Crear</a>
                 </div>
-                <div class="card-body">
-                    <table class="table table-responsive w-100">
+                <div class="card-body" style="overflow-x: scroll">
+                    <table class="table table-responsive w-100" >
                         <thead class="table" style="background-color: #00bcd4">
                         <tr>
                             <th scope="col">Nombre</th>

@@ -8,15 +8,9 @@
     <div class="container mt-5">
         <div class="row">
             <div class="col">
-                <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
-                    <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="card-img-top"
-                                 src="{{ asset('img/tarjetablanca.png') }}"
-                                 class="d-block w-100" alt="...">
-                        </div>
-                    </div>
-                </div>
+                <img class=" img-fluid"
+                     src="{{ asset('img/zafiro.png') }}"
+                     alt="...">
             </div>
         </div>
         <div class="row bg-light justify-content-center">

@@ -13,7 +13,7 @@
 {{--                    // todo quitar ese id que no tiene que ir--}}
                     <a class="btn btn-success" href="{{ route('users.create') }}">Crear</a>
                 </div>
-                <div class="card-body">
+                <div class="card-body" style="overflow-x: scroll">
                     <table class="table table-responsive w-100">
                         <thead class="table" style="background-color: #00bcd4">
                         <tr>

@@ -22,3 +22,10 @@
 border-top-left-radius: calc(0.25rem - 1px);
     border-top-right-radius: calc(0.25rem - 1px);
 }
+
+.responsive {
+    width: 100%;
+    height: auto;
+    background-position: center;
+    background-size: contain;
+}

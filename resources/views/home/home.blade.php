@@ -15,19 +15,15 @@
     </div>
     <div class="container mt-5">
         <div class="row justify-content-center">
-            <div class="col-11">
+            <div class="col-12">
                 <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
                     <div class="carousel-inner">
-                        <div class="carousel-item active">
-                            <img class="card-img-top"
-                                 src="{{ asset('img/carrousel/senderos.jpg') }}"
-                                 class="d-block w-100" alt="...">
+                        <div class="carousel-item active d-flex">
+                            <img src="{{ asset('img/carrousel/senderos.jpg') }}" class="img-fluid" alt="..." style="background-size: contain">
                         </div>
                         @foreach($carrousel as $image)
                             <div class="carousel-item">
-                                <img class="card-img-top"
-                                     src="{{ asset($image->path) }}"
-                                     class="d-block w-100" alt="...">
+                                <img class="card-img-top"  src="{{ asset($image->path) }}" class="d-block w-100" alt="...">
                             </div>
                         @endforeach
                     </div>
@@ -45,7 +41,7 @@
             </div>
         </div>
     </div>
-    <div class="container rounded-4 shadow-lg bg-light mt-1">
+    <div class="container rounded-4 shadow-lg bg-light mt-5">
         <div class="row justify-content-around">
             <h1 class="font2 text-black text-center mt-5">Senderos de Paz siempre al alcance de ti</h1>
             <div class="col-md-5 col-sm-12 pt-5 pb-5">
@@ -118,6 +114,9 @@
                 <a href="{{ route('pagos') }}">
                     <img src="{{ asset('img/pago.png') }}" class="p-1" width="auto" height="100" alt="">
                 </a>
+                <a href="">
+                    <img src="{{ asset('img/pse.png') }}" class="p-1" width="auto" height="110" alt="">
+                </a>
                 <a href="{{ route('planes') }}">
                     <img src="{{ asset('img/planes.png') }}" class="p-1" width="auto" height="100" alt="">
                 </a>
@@ -125,7 +124,7 @@
         </div>
         <div class="row p-5">
             <h1 class="font2 text-center mt-5 ">Federación nacional de comerciantes</h1>
-            <div class="col-3 mt-5">
+            <div class="col-sm-12 col-md-3 mt-5">
                 <div class="card shadow-lg">
                     <div class="card-header text-center">
                         Fenalco
@@ -133,7 +132,7 @@
                     <img src="{{ asset('img/fenalco.png')  }}" class="img-thumbnail" alt="fenalco">
                 </div>
             </div>
-            <div class="col-3 mt-5">
+            <div class="col-sm-12 col-md-3 mt-5">
                 <div class="card shadow-lg">
                     <div class="card-header text-center">
                         Finsa
@@ -141,7 +140,7 @@
                     <img src="{{ asset('img/finsa.jpg')  }}" class="img-thumbnail" alt="fenalco">
                 </div>
             </div>
-            <div class="col-3 mt-5">
+            <div class="col-sm-12 col-md-3 mt-5">
                 <div class="card shadow-lg">
                     <div class="card-header text-center">
                         Remanso
@@ -149,7 +148,7 @@
                     <img src="{{ asset('img/remanso.jpg')  }}" class="img-thumbnail" alt="fenalco">
                 </div>
             </div>
-            <div class="col-3 mt-5">
+            <div class="col-sm-12 col-md-3 mt-5">
                 <div class="card shadow-lg">
                     <div class="card-header text-center">
                         Sena
@@ -159,9 +158,9 @@
             </div>
         </div>
         <div class="row justify-content-center">
-            <h3 class="font2 text-center mb-5 mt-5">Conoce nuestra aplicacion movil</h3>
-            <div class="col-md-10 row justify-content-center">
-                <div class="card mb-3" style="max-width: 800px">
+            <h3 class="font2 text-center mb-5 mt-5">Conoce nuestra aplicación movil</h3>
+            <div class="col-md-10 mb-5 row justify-content-center">
+                <div class="card mb-5" style="max-width: 800px">
                     <div class="row g-0">
                         <div class="col-md-4">
                             <img src="{{ asset('img/appmovil.jpg')  }}" class="img-fluid rounded-start" alt="...">
@@ -169,8 +168,8 @@
                         <div class="col-md-8">
                             <div class="card-body">
                                 <h5 class="card-title">Senderos De Paz</h5>
-                                <p class="card-text">App Que Permite A Los Afiliados Tener Información De Sus Productos Y Servicios Como También La Posibilidad De Realizar
-                                    Sus Pagos De Cuotas Exequiales En Línea De Forma Segura, Rápida Y Simple</p>
+                                <p class="card-text">App que permite a los afiliados tener información de sus productos y servicios como también la posibilidad de realizar
+                                    sus pagos de cuotas exequiales en línea de forma segura, rápida y simple</p>
                                 <a href="https://play.google.com/store/apps/details?id=com.bssolutions.senderosdepaz&amp;hl=es_CO&amp;gl=US" class="btn btn-primary">Descargala</a>
                             </div>
                         </div>

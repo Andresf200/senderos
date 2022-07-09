@@ -4,12 +4,11 @@
 
 @section('home')@endsection
 
+@section('container', 'container-fluid')
 @section('content')
     <div class="row">
         <div class="col">
-            <div class="">
-                <img src="{{ asset('img/pagos2.png') }}" class="img-thumbnail" alt="">
-            </div>
+            <img src="{{ asset('img/pagos2.png') }}" class="img-fluid" alt="">
         </div>
     </div>
 @endsection

@@ -4,9 +4,10 @@
 
 @section('home')@endsection
 
+@section('container', 'container-fluid')
 @section('content')
     <div class="row mt-5">
-        <div class="col-4" >
+        <div class="col-sm-12 col-md-4 mt-5">
             <div class="card">
                 <div class="card-header">
                     <h5 class="font2 text-center">Planes familiares</h5>
@@ -19,7 +20,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-sm-12 col-md-4 mt-5">
             <div class="card">
                 <div class="card-header">
                     <h5 class="font2 text-center">Planes empresariales</h5>
@@ -32,7 +33,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4">
+        <div class="col-sm-12 col-md-4 mt-5">
             <div class="card">
                 <div class="card-header">
                     <h5 class="font2 text-center">Apoyo Psicosocial</h5>
@@ -45,7 +46,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4 mt-5">
+        <div class="col-sm-12 col-md-4 mt-5">
             <div class="card">
                 <div class="card-header">
                     <h5 class="font2 text-center">Plan Galardón</h5>
@@ -57,7 +58,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4 mt-5">
+        <div class="col-sm-12 col-md-4 mt-5">
             <div class="card">
                 <div class="card-header">
                     <h5 class="font2 text-center">Titulo Diamante</h5>
@@ -72,7 +73,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4 mt-5">
+        <div class="col-sm-12 col-md-4 mt-5">
             <div class="card">
                 <div class="card-header">
                     <h5 class="font2 text-center">Plan Pueblo</h5>
@@ -85,7 +86,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4 mt-5">
+        <div class="col-sm-12 col-md-4 mt-5">
             <div class="card">
                 <div class="card-header">
                     <h5 class="font2 text-center">Plan Acuavalle</h5>
@@ -99,7 +100,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4 mt-5">
+        <div class="col-sm-12 col-md-4 mt-5">
             <div class="card">
                 <div class="card-header">
                     <h5 class="font2 text-center">Plan bono canasta</h5>
@@ -112,7 +113,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4 mt-5">
+        <div class="col-sm-12 col-md-4 mt-5">
             <div class="card">
                 <div class="card-header">
                     <h5 class="font2 text-center">Plan ERT</h5>
@@ -126,7 +127,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4 mt-5">
+        <div class="col-sm-12 col-md-4 mt-5">
             <div class="card">
                 <div class="card-header">
                     <h5 class="font2 text-center">Plan integral</h5>
@@ -140,7 +141,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4 mt-5">
+        <div class="col-sm-12 col-md-4 mt-5">
             <div class="card w-100">
                 <div class="card-header">
                     <h5 class="font2 text-center">Plan mascota</h5>
@@ -154,7 +155,7 @@
                 </div>
             </div>
         </div>
-        <div class="col-4 mt-5">
+        <div class="col-sm-12 col-md-4 mt-5">
             <div class="card">
                 <div class="card-header">
                     <h5 class="font2 text-center">Repatriación</h5>
